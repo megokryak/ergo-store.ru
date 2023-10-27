@@ -1,0 +1,129 @@
+.search {
+  display: none;
+
+  @media (min-width: @t-width) {
+    display: flex;
+  }
+}
+
+.search__input {
+  width: 312px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  background-color: @colorLightGray;
+  margin: 0;
+  padding: 17px 24px;
+  font-size: 14px;
+  line-height: 16px;
+  color: @colorGray;
+  letter-spacing: 0.14px;
+
+  @media (min-width: @d-width) {
+    width: 409px;
+  }
+}
+
+.search__input::placeholder {
+  color: @colorGray;
+}
+
+.search__wrapper-select {
+  display: flex;
+  position: relative;
+  padding-right: 47px;
+  background-color: @colorLightGray;
+}
+
+.search__wrapper-select::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 9px);
+  width: 14px;
+  height: 18px;
+  background-image: url("/assets/img/arrow-down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search__category {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+  background-color: @colorLightGray;
+  border: none;
+  font-size: 14px;
+  line-height: 14px;
+  color: @colorBlack;
+  letter-spacing: 0.14px;
+  appearance: none;
+  padding-left: 23px;
+  outline: none;
+}
+
+.search__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: @colorLightGray;
+  box-sizing: border-box;
+  padding-left: 21px;
+  padding-right: 21px;
+  position: relative;
+}
+
+.search__wrapper-select::before,
+.search__submit::before {
+  content: "";
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: @colorGray;
+  z-index: 1;
+}
+
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+}
+
+.select {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+
+  select,
+  &::after {
+    grid-area: select;
+  }
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+  // Custom arrow
+  &:not(.select--multiple)::after {
+    content: "";
+    justify-self: end;
+    width: 10px;
+    height: 10px;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  }
+}

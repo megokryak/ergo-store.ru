@@ -1,0 +1,166 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  letter-spacing: 0.14px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @t-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: @d-width) {
+    justify-content: flex-start;
+  }
+}
+
+.menu__item {
+  width: 50%;
+  padding: 8px 0;
+  box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    width: auto;
+    padding: 1px 9px;
+    border: 1px solid @colorDopGray;
+    border-radius: 20px;
+  }
+
+  @media (min-width: @d-width) {
+    padding: 1px 11px;
+  }
+}
+
+.menu__item:not(:first-child) {
+  @media (min-width: @d-width) {
+    margin-left: 20px;
+  }
+}
+
+.menu__item--stock {
+  order: 1;
+}
+
+.menu__item--sale {
+  order: 3;
+
+  @media (min-width: @t-width) {
+    order: 2;
+  }
+}
+
+.menu__item--new {
+  order: 5;
+
+  @media (min-width: @t-width) {
+    order: 3;
+  }
+}
+
+.menu__item--in-stock {
+  order: 7;
+
+  @media (min-width: @t-width) {
+    order: 4;
+  }
+}
+
+.menu__item--chairs {
+  order: 2;
+
+  @media (min-width: @t-width) {
+    order: 5;
+  }
+}
+
+.menu__item--tables {
+  order: 4;
+
+  @media (min-width: @t-width) {
+    order: 6;
+  }
+}
+
+.menu__item--sofas {
+  order: 6;
+
+  @media (min-width: @t-width) {
+    order: 7;
+  }
+}
+
+.menu__item--accessories {
+  order: 8;
+}
+
+.menu__link {
+  display: block;
+  text-decoration: none;
+  color: @colorBlack;
+  padding-left: 24px;
+  position: relative;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+  }
+}
+
+.menu__link--stock,
+.menu__link--sale {
+  color: @colorOrange;
+
+  @media (min-width: @t-width) {
+    color: @colorBlack;
+  }
+}
+
+.menu__link--stock::before,
+.menu__link--sale::before,
+.menu__link--new::before,
+.menu__link--in-stock::before,
+.menu__link--chairs::before,
+.menu__link--tables::before,
+.menu__link--sofas::before,
+.menu__link--accessories::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 7px);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu__link--stock::before {
+  background-image: url("/assets/img/promo-icon.svg");
+}
+
+.menu__link--sale::before {
+  background-image: url("/assets/img/sale-icon.svg");
+}
+
+.menu__link--new::before {
+  background-image: url("/assets/img/new-icon.svg");
+}
+
+.menu__link--in-stock::before {
+  background-image: url("/assets/img/in-stock-icon.svg");
+}
+
+.menu__link--chairs::before {
+  background-image: url("/assets/img/chair-icon.svg");
+}
+
+.menu__link--tables::before {
+  background-image: url("/assets/img/table-icon.svg");
+}
+
+.menu__link--sofas::before {
+  background-image: url("/assets/img/divan-icon.svg");
+}
+
+.menu__link--accessories::before {
+  background-image: url("/assets/img/accessories-icon.svg");
+}

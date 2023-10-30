@@ -7,8 +7,9 @@
 }
 
 .main-nav__wrapper-submenu--active .search {
-  display: block;
+  display: flex;
 }
+
 
 .search__input {
   width: 312px;
@@ -42,11 +43,15 @@
   &[data-state="active"] {
     .search__select__title {
       &::before {
-        transform: translate(-3px, -50%) rotate(-45deg);
+        @media (min-width: @t-width) {
+          transform: translate(-3px, -50%) rotate(-45deg);
+        }
       }
 
       &::after {
-        transform: translate(3px, -50%) rotate(45deg);
+        @media (min-width: @t-width) {
+          transform: translate(3px, -50%) rotate(45deg);
+        }
       }
     }
     
@@ -73,20 +78,32 @@
 
   &::before,
   &::after {
+    @media (min-width: @t-width) {
     content: "";
-    position: absolute;
-    top: calc(50% - 2px);
-    right: 16px;
-    display: block;
-    width: 8px;
-    height: 2px;
-    transition: all 0.3s ease-out;
-    background-color: @colorBlack;
-    transform: translate(-3px, -50%) rotate(45deg);
+      position: absolute;
+      top: calc(50% - 2px);
+      right: 16px;
+      display: block;
+      width: 8px;
+      height: 2px;
+      transition: all 0.3s ease-out;
+      background-color: @colorBlack;
+      transform: translate(-2px, -50%) rotate(45deg);
+    }
   }
 
   &::after {
-    transform: translate(3px, -50%) rotate(-45deg);
+    @media (min-width: @t-width) {
+      transform: translate(2px, -50%) rotate(-45deg);
+    }
+  }
+}
+
+.search__select__title span {
+  display: none;
+
+  @media (min-width: @t-width) {
+    display: block;
   }
 }
 

@@ -68,7 +68,7 @@
             </label>
             <label class="visually-hidden" for="search-cat"></label>
             <div class="search__wrapper-select">
-                <div class="search__select__title" data-default="Option 0">Категории</div>
+                <div class="search__select__title" id="search__select__title" data-default="Option 0">Категории</div>
                 <div class="search__select__content">
                   <input id="singleSelect0" class="search__select__input" type="radio" name="singleSelect" checked />
                   <label for="singleSelect0" class="search__select__label">Категории</label>
@@ -139,13 +139,20 @@
             <li class="main-nav__item1 main-nav__item1--search"><a href="#" class="main-nav__link main-nav__link--search">Поиск</a>
               <div class="main-nav__wrapper-submenu">
                 <div class="main-nav__wrapper-search">
+                  <h2 class="main-nav__search-title">Поиск</h2>
                   <form class="main-nav__search search" action="#" method="post">
                     <label class="search__label-input">
                       <input class="search__input" type="text" name="search" placeholder="Поиск по каталогу">
                     </label>
                     <label class="visually-hidden" for="search-cat"></label>
                     <div class="search__wrapper-select">
-                      <div class="search__select__title" data-default="Option 0"><span>Категории</span></div>
+                      <div class="search__select__title" data-default="Option 0">
+                        <span>Категории</span>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.42358 1.96696C7.44141 1.42783 7.88361 1 8.42304 1H9.57692C10.1163 1 10.5586 1.42783 10.5764 1.96696L10.5853 2.23663C10.5999 2.6772 10.9047 3.04862 11.3139 3.2124C11.3615 3.23146 11.4089 3.2511 11.456 3.2713C11.8611 3.44524 12.3394 3.39817 12.6613 3.09685L12.8585 2.91229C13.2523 2.54364 13.8675 2.55379 14.249 2.93524L15.0648 3.75108C15.4462 4.13253 15.4564 4.74776 15.0877 5.14158L14.9031 5.3388C14.6018 5.66067 14.5547 6.13894 14.7287 6.54407C14.7489 6.59112 14.7685 6.63846 14.7876 6.6861C14.9514 7.09536 15.3228 7.40018 15.7634 7.41473L16.033 7.42363C16.5721 7.44144 17 7.88365 17 8.42309V9.57691C17 10.1163 16.5721 10.5586 16.033 10.5764L15.7634 10.5853C15.3228 10.5998 14.9514 10.9046 14.7876 11.3139C14.7685 11.3615 14.7489 11.4089 14.7287 11.4559C14.5547 11.8611 14.6018 12.3393 14.9031 12.6612L15.0877 12.8584C15.4564 13.2523 15.4462 13.8675 15.0648 14.2489L14.249 15.0648C13.8675 15.4462 13.2523 15.4564 12.8585 15.0877L12.6613 14.9032C12.3394 14.6018 11.8611 14.5548 11.456 14.7287C11.4089 14.7489 11.3615 14.7685 11.3139 14.7876C10.9047 14.9514 10.5999 15.3228 10.5853 15.7634L10.5764 16.033C10.5586 16.5722 10.1163 17 9.57692 17H8.42304C7.88361 17 7.44141 16.5722 7.42358 16.033L7.41467 15.7634C7.40011 15.3229 7.09529 14.9514 6.68603 14.7877C6.63839 14.7686 6.59105 14.749 6.544 14.7288C6.13884 14.5548 5.66056 14.6019 5.33867 14.9032L5.1416 15.0877C4.74778 15.4564 4.13253 15.4462 3.75109 15.0648L2.93525 14.2489C2.55382 13.8675 2.54366 13.2522 2.91229 12.8584L3.09672 12.6614C3.39805 12.3395 3.44509 11.8612 3.27115 11.456C3.25095 11.4089 3.23132 11.3616 3.21225 11.3139C3.04847 10.9046 2.67703 10.5998 2.23643 10.5853L1.96699 10.5764C1.42785 10.5586 1 10.1163 1 9.57691V8.42309C1 7.88365 1.42785 7.44144 1.96699 7.42363L2.23643 7.41474C2.67702 7.40018 3.04847 7.09535 3.21225 6.68607C3.23132 6.63843 3.25095 6.59107 3.27115 6.54402C3.44509 6.13884 3.39805 5.66052 3.09673 5.33861L2.91229 5.14156C2.54366 4.74774 2.55382 4.13253 2.93525 3.7511L3.75109 2.93524C4.13253 2.55378 4.74778 2.54363 5.1416 2.91229L5.33867 3.09677C5.66056 3.39808 6.13885 3.44516 6.54401 3.27125C6.59107 3.25105 6.63842 3.23141 6.68607 3.21234C7.09532 3.04858 7.40011 2.67716 7.41467 2.23661L7.42358 1.96696Z"/>
+                          <ellipse cx="8.99976" cy="8.99999" rx="3.35425" ry="3.35425"/>
+                        </svg>
+                      </div>
                       <div class="search__select__content">
                         <input id="singleSelect0" class="search__select__input" type="radio" name="singleSelect" checked />
                         <label for="singleSelect0" class="search__select__label">Категории</label>
@@ -162,6 +169,29 @@
                       <span class="visually-hidden">Отправить</span>
                     </button>
                   </form>
+                  <div class="main-nav__search-result search-result">
+                    <h3 class="search-result__title">Результаты поиска</h3>
+                    <ul class="search-result__list">
+                      <li class="search-result__item">
+                        <a href="#" class="search-result__link">
+                          <b>Стол Rudolf Дуб Вотан</b>
+                          <span>100-130*100*75 см</span>
+                        </a>
+                      </li>
+                      <li class="search-result__item">
+                        <a href="#" class="search-result__link">
+                          <b>Стол Rudolf Дуб Вотан</b>
+                          <span>100-130*100*75 см</span>
+                        </a>
+                      </li>
+                      <li class="search-result__item">
+                        <a href="#" class="search-result__link">
+                          <b>Стол Rudolf Дуб Вотан</b>
+                          <span>100-130*100*75 см</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </li>

@@ -1,8 +1,20 @@
 .form {
-  padding-top: @paddingTop;
-  padding-bottom: @paddingBottom;
+  padding-top: var(--paddingTop);
+  padding-bottom: var(--paddingBot);
   border-bottom: 1px solid @colorDopGray;
   background-color: @colorBlack;
+
+  @media (min-width: @t-width) {
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.form__container {
+  @media (min-width: @t-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .form__title {
@@ -27,6 +39,21 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @media (min-width: @t-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: none;
+    row-gap: 50px;
+  }
+}
+
+.form__label--message {
+  @media (min-width: @t-width) {
+    width: 100%;
+  }
 }
 
 .form__input,
@@ -40,6 +67,13 @@
   font-weight: 300;
   letter-spacing: 0.32px;
   color: @colorWhite;
+  box-sizing: border-box;
+}
+
+.form__input {
+  @media (min-width: @t-width) {
+    min-width: 250px;
+  }
 }
 
 .form__input::placeholder,
@@ -50,6 +84,12 @@
 .form__input:focus,
 .form__message:focus {
   outline: none;
+}
+
+.form__label-checkbox {
+  @media (min-width: @t-width) {
+  
+  }
 }
 
 .form__label-checkbox span {
@@ -91,4 +131,8 @@
   border: 1px solid @colorLightGray;
   border-radius: 6px;
   margin-top: 24px;
+
+  @media (min-width: @t-width) {
+    margin-top: 0;
+  }
 }

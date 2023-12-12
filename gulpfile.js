@@ -6,7 +6,7 @@ const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const gulpif = require('gulp-if');
-const gcmq = require('gulp-group-css-media-queries');
+// const gcmq = require('gulp-group-css-media-queries');
 const less = require('gulp-less');
 const smartgrid = require('smart-grid');
 var pipeline = require('readable-stream').pipeline;
@@ -53,7 +53,7 @@ function styles(){
 			 //  .pipe(gulpif(isDev, sourcemaps.init()))
 			   .pipe(less())
 			  //  .pipe(concat('style.css'))
-			   .pipe(gcmq())
+			  //  .pipe(gcmq())
 			   .pipe(autoprefixer({
 		            browsers: ['> 0.1%'],
 		            cascade: false

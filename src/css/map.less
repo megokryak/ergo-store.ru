@@ -1,3 +1,22 @@
+.map {
+  @media (min-width: @t-width) {
+    margin-top: -200px;
+  }
+}
+
+.map iframe {
+  width: 100%;
+  height: calc(1.3 * 100vw);
+
+  @media (min-width: @x-width) {
+    height: calc(0.5 * 100vw);
+  }
+
+  @media (min-width: @t-width) {
+    height: calc(0.53 * 100vw);
+  }
+}
+
 .map__img {
   display: none;
   width: 100%;

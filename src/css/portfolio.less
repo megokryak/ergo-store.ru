@@ -1,0 +1,89 @@
+.portfolio {
+  padding-top: var(--sectionPT);
+  padding-bottom: var(--sectionPB);
+
+  @media (min-width: @t-width) {
+    padding-bottom: 0;
+  }
+}
+
+.portfolio__container {
+  @media (min-width: @t-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.portfolio__title {
+  color: @colorBlack;
+  font-weight: 500;
+  line-height: 140%;
+  padding-right: 40px;
+
+  @media (min-width: @t-width) {
+    line-height: 36px;
+    order: 1;
+    margin-left: var(--container);
+  }
+}
+
+.portfolio__list {
+  margin-top: 50px;
+
+  @media (min-width: @t-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+    width: 100%;
+    order: 3;
+  }
+}
+
+.portfolio__item {
+  position: relative;
+}
+
+.portfolio__direction {
+  letter-spacing: 0.14px;
+  font-size: 14px;
+  line-height: 16px;
+  color: @colorDarkGray;
+  background-color: @colorWhite;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: block;
+  padding: 7px 16px 6px;
+  border-radius: 20px;
+}
+
+.portfolio__direction::after {
+  content: "";
+  width: 12px;
+  height: 6px;
+  background-image: url("/assets/img/arrow-down.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 6px);
+}
+
+.portfolio__link {
+  color: @colorDarkGray;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: underline;
+  margin-top: 30px;
+
+  @media (min-width: @t-width) {
+    order: 2;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: var(--container);
+  }
+}

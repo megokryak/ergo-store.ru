@@ -1,0 +1,39 @@
+.btn-link {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 128%;
+  font-weight: 400;
+  color: @colorWhite;
+  text-align: center;
+  background-color: @colorBlack;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1;
+
+  @media (min-width: @x-width) {
+    width: auto;
+    padding: 20px 40px 20px 15px;
+  }
+
+  @media (min-width: @t-width) {
+    padding: 16px 52px 16px 32px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    color: @colorWhite;
+    transition: 0.3s;
+  }
+}

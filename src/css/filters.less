@@ -1,0 +1,115 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filters__category-list,
+.filters__brands-list {
+  display: none;
+
+  @media (min-width: @t-width) {
+    display: flex;
+    column-gap: 14px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.filters__brands-list {
+  @media (min-width: @t-width) {
+    column-gap: 24px;
+    row-gap: 16px;
+    margin-top: 40px;
+  }
+}
+
+.filters__category-choose,
+.filters__brands-choose {
+  margin: 0;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  background-color: @colorBlack;
+  color: @colorWhite;
+
+  @media (min-width: @t-width) {
+    display: none;
+  }
+}
+
+.filters__category-item {
+  margin: 0;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  background-color: @colorBlack;
+  color: @colorWhite;
+
+  @media (min-width: @t-width) {
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    line-height: 16px;
+  }
+}
+
+.filters__category-item svg {
+  @media (min-width: @t-width) {
+    display: none;
+  }
+}
+
+.filters__category-item--active {
+  background-color: @colorOrange;
+}
+
+.filters__brands-choose { 
+  background-color: @colorWhite;
+  color: @colorBlack;
+  border: 1px solid @colorDopGray;
+}
+
+.filters__category-choose svg path {
+  stroke: @colorWhite;
+}
+
+.filters__brands-choose svg path {
+  stroke: @colorBlack;
+}
+
+.filters__brands-item {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (min-width: @t-width) {
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    line-height: 16px;
+  }
+}
+
+.filters__category-link,
+.filters__brands-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

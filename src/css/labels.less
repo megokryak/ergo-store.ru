@@ -1,0 +1,49 @@
+.labels {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.labels__sale,
+.labels__hit,
+.labels__new {
+  display: block;
+  padding: 6px 8px;
+  border-radius: 12px;
+  font-size: 9px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.labels__sale {
+  background-color: @colorDopPink;
+  color: @colorDopRed;
+}
+
+.labels__hit {
+  background-color: @colorDopBlue;
+  color: @colorDarkGray;
+}
+
+.labels__new {
+  background-color: @colorDopGreen;
+  color: @colorDarkGray;
+}
+
+.labels__like {
+  width: 16px;
+  height: 15px;
+  fill: #fe4848;
+  margin-left: auto;
+  stroke: transparent;
+}
+
+.labels__like--nolike {
+  fill: transparent;
+  stroke: @colorGray;
+}
+
+.labels__opacity {
+  opacity: 0;
+}

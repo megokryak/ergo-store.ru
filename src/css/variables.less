@@ -1,6 +1,8 @@
 @m-width: 360px;
+@x-width: 600px;
 @t-width: 1200px;
 @d-width: 1920px;
+@2d-width: 2100px;
 
 @colorExtraBlack : #222222;
 @colorBlack: #3a3a3a;
@@ -17,3 +19,22 @@
 @colorDopOrange: #d77418;
 @colorDopGray: #d7d7d7;
 @colorModalBlack: #000000;
+@bgColorSlider: #e2e2e2;
+
+:root {
+  --index: calc(1vw + 1vh);
+  --sectionPT: 50px;
+  --sectionPB: 50px;
+  --container: 15px;
+  
+  @media (min-width: @t-width) {
+    --sectionPT: 90px;
+    --sectionPB: 90px;
+    --container: 120px;
+  }
+}
+
+
+@marginTop: 40px;
+@paddingTop: 40px;
+@paddingBottom: 40px;

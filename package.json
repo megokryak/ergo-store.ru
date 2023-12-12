@@ -23,7 +23,6 @@
     "is-plain-object": "^5.0.0",
     "normalize.css": "^8.0.1",
     "sharp": "^0.29.3",
-    "swiper": "^4.5.1",
     "through2": "^3.0.2",
     "utf8": "^3.0.0",
     "yargs": "^15.4.1"

@@ -1,0 +1,20 @@
+.category {
+  display: flex;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    justify-content: space-between;
+  }
+}
+
+.category__item {
+  border: 1px solid @colorDopGray;
+  border-radius: 6px;
+  min-width: 100%;
+  
+  @media (min-width: @t-width) {
+    max-width: 33%;
+    min-width: auto;
+  }
+}

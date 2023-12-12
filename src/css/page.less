@@ -1,0 +1,23 @@
+.page__slider {
+  position: relative;
+  background-color: #e2e2e2;
+
+  @media (min-width: @d-width) {
+    margin-top: 30px;
+  }
+}
+
+.page__form,
+.page__our-contacts {
+  @media (min-width:@t-width) {
+    margin-left: var(--container);
+    margin-right: var(--container);
+    border-radius: 6px 6px 0 0;
+  }
+}
+
+.page__our-contacts {
+  @media (min-width:@t-width) {
+    border-radius: 0 0 6px 6px;
+  }
+}

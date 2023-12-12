@@ -1,0 +1,138 @@
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price--old-price {
+  width: 100%;
+}
+
+.price__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price__total {
+  display: inline-block;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: @colorWhite;
+  background-color: @colorOrange;
+  border-radius: 4px 0 0 4px;
+}
+
+.price__total--old-price {
+  margin-left: auto;
+  position: relative;
+}
+
+.price__total--old-price::before {
+  content: "189 990 ₽";
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  color: @colorDarkGray;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: -70px;
+}
+
+.price__total--old-price::after {
+  content: "";
+  width: 63px;
+  height: 8px;
+  background-image: url("/assets/img/old_price.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -70px;
+  top: calc(50% - 4px);
+  z-index: 1;
+}
+
+.price__quantity {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 0 4px 4px 0;
+  background-color: @colorBlack;
+  padding: 14px 16px;
+}
+
+.price__quantity--add-to-card {
+  background-color: @colorOrange;
+  position: relative;
+}
+
+.price__quantity--add-to-card::before {
+  content: "";
+  width: 1px;
+  height: 26px;
+  background-color: @colorDopOrange;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+
+.price__number {
+  display: block;
+  width: 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 20px;
+  color: @colorWhite;
+  appearance: textfield;
+  text-align: center;
+}
+
+.price__number:focus {
+  outline: none;
+}
+
+.price__number::-webkit-inner-spin-button,
+.price__number::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.price__button {
+  border: none;
+  background-color: transparent;
+  color: @colorWhite;
+  font-size: 12px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.price__submit {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: @colorBlack;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: 1px solid @colorBlack;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+
+.price__quantity--add-to-card .price__button,
+.price__quantity--add-to-card price__label-total,
+.price__quantity--add-to-card .price__number {
+  display: none;
+}
+
+.price__add-to-card {
+  display: none;
+}
+
+.price__quantity--add-to-card .price__add-to-card {
+  display: block;
+}

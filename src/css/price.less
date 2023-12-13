@@ -10,6 +10,29 @@
 .price__wrapper {
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover div,
+  &:focus div {
+    background-color: @colorBlack;
+    transition: 0.3s;
+  }
+
+  &:hover .price__quantity--add-to-card::before,
+  &:focus .price__quantity--add-to-card::before {
+    background-color: @colorDarkGray;
+    transition: 0.3s;
+  }
+
+  &:hover .price__add-to-card path,
+  &:focus .price__add-to-card path,
+  &:hover .price__add-to-card ellipse,
+  &:focus .price__add-to-card ellipse {
+    stroke: @colorDarkGray;
+    transition: 0.3s;
+  }
+   
 }
 
 .price__total {
@@ -107,6 +130,11 @@
   line-height: 20px;
   cursor: pointer;
   padding: 0 5px;
+
+  &:hover,
+  &:focus {
+    color: @colorOrange;
+  }
 }
 
 .price__submit {
@@ -120,6 +148,14 @@
   border: 1px solid @colorBlack;
   border-radius: 4px;
   background-color: transparent;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    transition: 0.3s;
+    border-color: @colorOrange;
+    color: @colorOrange;
+  }
 }
 
 

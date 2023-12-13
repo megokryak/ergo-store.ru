@@ -84,6 +84,7 @@
   display: none;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.3s;
 
   @media (min-width: @t-width) {
     display: flex;
@@ -95,9 +96,22 @@
     margin-top: -9px;
     margin-right: 63px;
   }
+
+  &:hover path,
+  &:focus path {
+    transition: 0.3s;
+    stroke: @colorOrange;
+  }
+
+  &:hover span,
+  &:focus span {
+    transition: 0.3s;
+    color: @colorOrange;
+  }
 }
 
 .header__link-like span {
+  transition: 0.3s;
   display: none;
 
   @media (min-width: @d-width) {
@@ -120,12 +134,23 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  @media (min-width: @t-width) {
+  @media (min-width: @d-width) {
     margin-top: -20px;
+    max-height: 35px;
   }
 
-  @media (min-width: @d-width) {
-    max-height: 35px;
+  &:hover span,
+  &:focus  span,
+  &:hover::before,
+  &:focus::before {
+    color: @colorOrange;
+  }
+
+  &:hover path,
+  &:focus  path,
+  &:hover ellipse,
+  &:focus  ellipse {
+    stroke: @colorOrange;
   }
 }
 

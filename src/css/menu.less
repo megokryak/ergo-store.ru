@@ -19,6 +19,7 @@
   width: 50%;
   padding: 8px 0;
   box-sizing: border-box;
+  transition: 0.3s;
 
   @media (min-width: @t-width) {
     width: auto;
@@ -98,47 +99,36 @@
   display: block;
   text-decoration: none;
   color: @colorBlack;
-  padding-left: 24px;
-  position: relative;
+  // padding-left: 24px;
+  // position: relative;
+  display: flex;
+  gap: 6px;
+  align-items: center;
 
   @media (min-width: @t-width) {
     font-size: 14px;
   }
-}
 
-.menu__link--stock,
-.menu__link--sale {
-  color: @colorOrange;
+  &:hover,
+  &:focus {
+    color: @colorOrange;
+    transition: 0.3s;
+  }
 
-  @media (min-width: @t-width) {
-    color: @colorBlack;
+  &:hover path,
+  &:focus path,
+  &:hover circle,
+  &:focus circle,
+  &:hover rect,
+  &:focus rect  {
+    stroke: @colorOrange;
   }
 }
 
-.menu__link--stock::before,
-.menu__link--sale::before,
-.menu__link--new::before,
-.menu__link--in-stock::before,
-.menu__link--chairs::before,
-.menu__link--tables::before,
-.menu__link--sofas::before,
-.menu__link--accessories::before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  left: 0;
-  top: calc(50% - 7px);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.menu__link--stock::before {
-  background-image: url("/assets/img/promo-icon.svg");
-}
-
-.menu__link--sale::before {
-  background-image: url("/assets/img/sale-icon.svg");
+.menu__link path,
+.menu__link circle,
+.menu__link rect {
+  stroke: @colorBlack;
 }
 
 .menu__link--new::before {

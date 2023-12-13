@@ -58,11 +58,17 @@
   gap: 6px;
   background-color: @colorBlack;
   color: @colorWhite;
+  cursor: pointer;
 
   @media (min-width: @t-width) {
     font-size: 16px;
     letter-spacing: 0.16px;
     line-height: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @colorOrange;
   }
 }
 
@@ -99,11 +105,19 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  transition: 0.3s;
 
   @media (min-width: @t-width) {
     font-size: 16px;
     letter-spacing: 0.16px;
     line-height: 16px;
+  }
+
+  &:hover,
+  &:focus, 
+  &:focus a{
+    color: @colorOrange;
+    transition: 0.3s;
   }
 }
 

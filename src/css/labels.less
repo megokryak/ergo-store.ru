@@ -37,11 +37,19 @@
   fill: #fe4848;
   margin-left: auto;
   stroke: transparent;
+  cursor: pointer;
 }
 
 .labels__like--nolike {
   fill: transparent;
   stroke: @colorGray;
+  transition: 0.3s;
+
+  &:hover {
+    fill: #fe4848;
+    stroke: transparent;
+    transition: 0.3s;
+  }
 }
 
 .labels__opacity {

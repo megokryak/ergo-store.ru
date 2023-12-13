@@ -69,6 +69,13 @@
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.14px;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    color: @colorOrange;
+    transition: 0.3s;
+  }
 }
 
 .footer__wrapper-buyer,
@@ -79,6 +86,7 @@
 
   @media (min-width: @t-width) {
     margin-top: 0;
+    z-index: 2;
   }
 }
 
@@ -92,6 +100,19 @@
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.14px;
+  transition: 0.3s;
+}
+
+.footer__link-tel,
+.footer__link-email,
+.footer__link-whatsapp,
+.footer__link-telegram,
+.footer__link-room {
+  &:hover,
+  &:focus {
+    color: @colorOrange;
+    transition: 0.3s;
+  }
 }
 
 .footer__link-tel {
@@ -117,5 +138,8 @@
 
   @media (min-width: @t-width) {
     margin-top: -40px;
+    width: 100%;
+    align-items: flex-start;
+    z-index: 1;
   }
 }

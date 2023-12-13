@@ -12,6 +12,15 @@
   box-sizing: border-box;
   border: 1px solid @colorWhite;
   border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+
+// Проработать на JS 
+  &:hover,
+  &:focus {
+    outline: 1px solid #835D3A;
+    transition: 0.3s;
+  }
 }
 
 .colors__item--brown {
@@ -35,9 +44,9 @@
   border: 1px solid @colorGray;
 }
 
-.colors__item--active {
-  outline: 1px solid #835D3A;
-}
+// .colors__item--active {
+//   outline: 1px solid #835D3A;
+// }
 
 .colors__item__more-colors {
   display: flex;

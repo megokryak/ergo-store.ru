@@ -110,10 +110,27 @@ slider__wrapper-description {
   background-color: transparent;
   border-radius: 6px;
   border: 1px solid @colorDopGray;
+  z-index: 3;
+  cursor: pointer;
 
   @media (min-width: @t-width) {
     padding: 16px 40px;
     margin-top: 72px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: @colorBlack;
+  }
+
+  &:hover path,
+  &:focus path {
+    stroke: @colorBlack;
+  }
+
+  &:hover span,
+  &:focus span {
+    color: @colorBlack;
   }
 }
 
@@ -151,6 +168,10 @@ slider__wrapper-description {
     order: 5;
     margin-top: -50px;
   }
+}
+
+a.slider__btn-link {
+  z-index: 3;
 }
 
 .slider__img {
@@ -228,6 +249,13 @@ slider__wrapper-description {
     height: 40px;
     background-size: 40px 40px;
   }
+}
+
+.slider__pagination-button--prev:hover::after,
+.slider__pagination-button--next:hover::after,
+.slider__pagination-button--prev:focus::after,
+.slider__pagination-button--next:focus::after {
+  background-image: url( "/assets/img/arrow-hover.svg");
 }
 
 .slider__pagination-button--next::after {

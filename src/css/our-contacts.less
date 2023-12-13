@@ -47,6 +47,13 @@
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.96px;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    transition: 0.3s;
+    color: @colorOrange;
+  }
 }
 
 .our-contacts__email {
@@ -66,4 +73,12 @@
   @media (min-width: @t-width) {
     margin-top: 0;
   }
+}
+
+.our-contacts__social-link:hover path,
+.our-contacts__social-link:hover rect,
+.our-contacts__social-link:focus path,
+.our-contacts__social-link:focus rect {
+  stroke: @colorOrange;
+  transition: 0.3s;
 }

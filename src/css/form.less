@@ -131,8 +131,23 @@
   border: 1px solid @colorLightGray;
   border-radius: 6px;
   margin-top: 24px;
+  transition: 0.3s;
 
   @media (min-width: @t-width) {
     margin-top: 0;
+  }
+
+  &:hover,
+  &:focus {
+    transition: 0.3s;
+    background-color: transparent;
+    border-color: @colorOrange;
+    color: @colorOrange;
+  }
+
+  &:hover path,
+  &:focus path {
+    transition: 0.3s;
+    stroke: @colorOrange;
   }
 }

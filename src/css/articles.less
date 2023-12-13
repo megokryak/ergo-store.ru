@@ -35,11 +35,18 @@
   line-height: 16px;
   text-decoration: underline;
   margin-top: 30px;
+  transition: 0.3s;
 
   @media (min-width: @t-width) {
     order: 2;
     margin-top: 0;
     margin-left: auto;
+  }
+
+  &:hover,
+  &:focus {
+    transition: 0.3s;
+    color: @colorOrange;
   }
 }
 

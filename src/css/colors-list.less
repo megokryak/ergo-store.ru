@@ -1,14 +1,30 @@
 
-.colors-list {
+.colors-list__list {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding-bottom: 20px;
 }
 
+.colors-list__close {
+  display: none;
+  margin-left: auto;
+  width: 10px;
+  height: 10px;
+}
+
+.colors-list__close path {
+  stroke: @colorBlack;
+}
+
+.colors-list__item--checked .colors-list__close {
+  display: block;
+}
+
 .colors-list__control {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 5px 5px 5px 36px;
   font-size: 14px;
   line-height: 14px;

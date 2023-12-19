@@ -22,7 +22,28 @@ function addClassOpenMenu (e) {
 }
 
 function hoverCheckBox () {
-  console.log(this);
+  let b = this.querySelector('input');
+  if (b.checked == true) {
+    this.classList.add('colors-list__item--checked');
+    if(this.querySelector('.colors-list__control-mark').style.backgroundColor == 'white') {
+      this.querySelector('.colors-list__control-mark').style.outline = '2px solid #B3B3B3';
+    }
+    else {
+      this.querySelector('.colors-list__control-mark').style.border = '2px solid #fff';
+      this.querySelector('.colors-list__control-mark').style.outline = '2px solid ' + this.querySelector('.colors-list__control-mark').style.backgroundColor;
+    }
+  }
+  else {
+    this.classList.remove('colors-list__item--checked');
+    if(this.querySelector('.colors-list__control-mark').style.backgroundColor == 'white') {
+      this.querySelector('.colors-list__control-mark').style.border = '1px solid #B3B3B3';
+      this.querySelector('.colors-list__control-mark').style.outline = 'none';
+    }
+    else {
+      this.querySelector('.colors-list__control-mark').style.border = 'none';
+      this.querySelector('.colors-list__control-mark').style.outline = 'none';
+    }
+  }
 }
 
 
@@ -61,5 +82,5 @@ hightTitle.addEventListener('click', function() {
 
 
 itemsColorCheck.forEach(e => {
-  e.addEventListener('click', hoverCheckBox, true);
+  e.addEventListener('change', hoverCheckBox, true);
 });

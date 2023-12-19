@@ -1,0 +1,93 @@
+.control-price {
+  display: none;
+  padding-bottom: 20px;
+}
+
+.form-filter__price-title--open + .control-price {
+  display: block;
+}
+
+.control-price__range-scale {
+  position: relative;
+  height: 1px;
+  background-color: @colorDopGray;
+}
+
+.control-price__range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: @colorBlack;
+}
+
+.control-price__range-wrapper {
+  position: absolute;
+}
+
+.control-price__range-wrapper--min {
+  top: calc(50% - 4px);
+  left: -4px;
+}
+
+.control-price__range-wrapper--max {
+  top: calc(50% - 4px);
+  left: calc(-4px + 109px);
+}
+
+.control-price__range-toggle {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: @colorBlack;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+.control-price__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.control-price__label {
+  font-size: 14px;
+  line-height: 14px;
+  color: @colorBlack;
+  letter-spacing: 0.14px;
+}
+
+.control-price__label {
+  font-size: 11px;
+  line-height: 11px;
+  color: @colorDopGray;
+  letter-spacing: 0.11px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 40%;
+}
+
+.control-price__dash {
+  width: 6px;
+  height: 1px;
+  background-color: @colorBlack;
+}
+
+.control-price__input {
+  font-size: 14px;
+  line-height: 14px;
+  color: @colorBlack;
+  width: 100%;
+  padding: 0 2px;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  border: 1px solid @colorDopGray;
+  border-radius: 4px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}

@@ -2,9 +2,25 @@
   display: flex;
   overflow-x: hidden;
   box-sizing: border-box;
+  flex-direction: row;
 
   @media (min-width: @t-width) {
     justify-content: space-between;
+  }
+}
+
+.page__category .products--similar .category {
+  flex-direction: row;
+}
+
+.page__category .category {
+  flex-direction: column;
+  overflow-x: auto;
+  gap: 16px;
+
+  @media (min-width: @t-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -16,5 +32,13 @@
   @media (min-width: @t-width) {
     max-width: 33%;
     min-width: auto;
+  }
+}
+
+.page__category .category__item  {
+  @media (min-width: @t-width) {
+    min-width: auto;
+    max-width: none;
+    width: 100%;
   }
 }

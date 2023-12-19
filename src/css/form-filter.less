@@ -1,7 +1,13 @@
 .form-filter {
+  display: none;
+
   @media (min-width: @t-width) {
     display: flex;
     gap: 14px;
+  }
+
+  @media (min-width: @d-width) {
+    flex-direction: column;
   }
 }
 
@@ -89,6 +95,12 @@
   }
 }
 
+.form-filter__filters-value {
+  @media (min-width: @d-width) {
+    display: none;
+  }
+}
+
 .form-filter__sort-value--open,
 .form-filter__filters-value--open {
   @media (min-width: @t-width) {
@@ -136,6 +148,12 @@
   }
 }
 
+.form-filter__filters-list {
+  @media (min-width: @d-width) {
+    display: block;
+  }
+}
+
 .form-filter__sort-value--open + .form-filter__sort-list,
 .form-filter__filters-value--open + .form-filter__filters-list {
   @media (min-width: @t-width) {
@@ -150,6 +168,10 @@
     border-top: none;
     border-radius: 0 0 4px 4px;
   }
+
+  @media (min-width: @d-width) {
+    position: static;
+  }
 }
 
 .form-filter__filters-value--open + .form-filter__filters-list {
@@ -161,11 +183,22 @@
 .form-filter__sort-item,
 .form-filter__filters-item {
   color: @colorBlack;
+  cursor: pointer;
 
   @media (min-width: @t-width) {
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0.14px;
+  }
+}
+
+.form-filter__sort-item {
+  @media (min-width: @d-width) {
+    &:hover,
+    &:focus {
+      color: @colorOrange;
+      text-decoration: underline;
+    }
   }
 }
 

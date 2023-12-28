@@ -6,7 +6,7 @@
     <title>ERGO-STORE</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
-  <body class="page">
+  <body class="page page__category">
     <header class="page__header header">
       <div class="header__wrapper-top-menu">
         <div class="header__container-top container">
@@ -348,342 +348,432 @@
         </div>
       </div>
     </header>
-    <!-- Слайден с топовыми предлоениями -->
-    <section class="page__slider slider">
-      <div class="slider__wrapper-slider" id="main-slider">
-        <ul class="slider__list swiper-wrapper">
-          <li class="slider__item swiper-slide">
-            <h2 class="slider__title">Эргономичные кресла FALTO</h2>
-            <p class="slider__sale-text">Акция действует с 1 по 30 сентября</p>
-            <div class="slider__promo-wrapper">
-              <button class="slider__promo-like">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                  
-                <span>В избранное</span>
-              </button>
-              <div class="slider__wrapper-description">
-                <p>на фото:</p>
-                <p class="slider__title-description">FALTO Promax</p>
-              </div>
-            </div>
-            <img src="/assets/img/slider1.png" alt="Кресло" class="slider__img">
-            <a href="#" class="slider__btn-link btn-link">
-              Перейти в каталог
-              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 1L13 6L8 11" stroke="white" stroke-linecap="round"/>
-                <path d="M12 6L1 6" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>                
+    <!-- Хлебные крошки -->
+    <section class="page__breadcrumbs breadcrumbs">
+      <div class="breadcrumbs__container container">
+        <a href="index.html" class="breadcrumbs__link-back">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+            <path d="M6 11L0.999999 6L6 1" stroke="#3A3A3A" stroke-linecap="round"/>
+            <path d="M2 6L13 6" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>вернуться на главную</span>
+        </a>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">
+              Главная
             </a>
           </li>
-          <li class="slider__item swiper-slide">
-            <h2 class="slider__title">Эргономичные кресла FALTO</h2>
-            <p class="slider__sale-text">Акция действует с 1 по 30 сентября</p>
-            <div class="slider__promo-wrapper">
-              <button class="slider__promo-like">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                  
-              <span>В избранное</span>
-              </button>
-              <div class="slider__wrapper-description">
-                <p>на фото:</p>
-                <p class="slider__title-description">FALTO Promax</p>
-              </div>
-            </div>
-            <img src="/assets/img/slider1.png" alt="Кресло" class="slider__img">
-            <a href="#" class="slider__btn-link btn-link">Перейти в каталог</a>
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link breadcrumbs__link--active">
+              Каталог
+            </a>
           </li>
-          <li class="slider__item swiper-slide">
-            <h2 class="slider__title">Эргономичные кресла FALTO</h2>
-            <p class="slider__sale-text">Акция действует с 1 по 30 сентября</p>
-            <div class="slider__promo-wrapper">
-              <button class="slider__promo-like">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                  
-                <span>В избранное</span>
-              </button>
-              <div class="slider__wrapper-description">
-                <p>на фото:</p>
-                <p class="slider__title-description">FALTO Promax</p>
-              </div>
-            </div>
-            <img src="/assets/img/slider1.png" alt="Кресло" class="slider__img">
-            <a href="#" class="slider__btn-link btn-link">Перейти в каталог</a>
-          </li>
-          <li class="slider__item swiper-slide">
-            <h2 class="slider__title">Эргономичные кресла FALTO</h2>
-            <p class="slider__sale-text">Акция действует с 1 по 30 сентября</p>
-            <div class="slider__promo-wrapper">
-              <button class="slider__promo-like">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                  
-                <span>В избранное</span>
-              </button>
-              <div class="slider__wrapper-description">
-                <p>на фото:</p>
-                <p class="slider__title-description">FALTO Promax</p>
-              </div>
-            </div>
-            <img src="/assets/img/slider1.png" alt="Кресло" class="slider__img">
-            <a href="#" class="slider__btn-link btn-link">Перейти в каталог</a>
-          </li>
-          <li class="slider__item swiper-slide">
-            <h2 class="slider__title">Эргономичные кресла FALTO</h2>
-            <p class="slider__sale-text">Акция действует с 1 по 30 сентября</p>
-            <div class="slider__promo-wrapper">
-              <button class="slider__promo-like">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                  
-                <span>В избранное</span>
-              </button>
-              <div class="slider__wrapper-description">
-                <p>на фото:</p>
-                <p class="slider__title-description">FALTO Promax</p>
-              </div>
-            </div>
-            <img src="/assets/img/slider1.png" alt="Кресло" class="slider__img">
-            <a href="#" class="slider__btn-link btn-link">Перейти в каталог</a>
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link breadcrumbs__link--active">
+              Кресло FALTO Promax
+            </a>
           </li>
         </ul>
       </div>
-      <div class="slider__wrapper_paggination">
-        <button class="slider__pagination-button swiper-button-prev slider__pagination-button--prev ">
-          <span class="visually-hidden">Предыдущий слайд</span>
-        </button>
-        <div class="slider__pagination-list swiper-pagination">
-          <!-- <li class="slider__pagination-item">
-            <button class="slider__pagination-button slider__pagination-button--active">
-              <span class="visually-hidden">1слайд </span>
-            </button>
-          </li>
-          <li class="slider__pagination-item">
-            <button class="slider__pagination-button">
-              <span class="visually-hidden">2слайд </span>
-            </button>
-          </li> -->
-        </div>
-        <button class="slider__pagination-button swiper-button-next slider__pagination-button--next ">
-          <span class="visually-hidden">Следующий слайд</span>
-        </button>
-      </div>
     </section>
     <!-- Кресла -->
-    <section class="page__products products">
-      <div class="products__container container">
-        <h2 class="products__title">Кресла и стулья</h2>
-        <button class="slider__promo-like">
+    <section class="page__product product">
+      <div class="product__container container">
+        <h2 class="product__title">Кресло FALTO Promax</h2>
+        <button class="product__promo-like">
           <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>                  
           <span>В избранное</span>
         </button>
-        <div class="products__filters filters">
-          <a href="#" class="filters__category-choose">
-            <span>все категории</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 8L7 12L3 8" stroke-linecap="round"/>
-              <path d="M7 11L7 2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                  
-          </a>
-          <ul class="filters__category-list">
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>все</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                   
-              </a>
+        <div class="product__settings settings">
+          <button class="settings__all-settings" type="button">
+            <span>Все настройки</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M7.42358 1.96696C7.44141 1.42783 7.88361 1 8.42304 1H9.57692C10.1163 1 10.5586 1.42783 10.5764 1.96696L10.5853 2.23663C10.5999 2.6772 10.9047 3.04862 11.3139 3.2124C11.3615 3.23146 11.4089 3.2511 11.456 3.2713C11.8611 3.44524 12.3394 3.39817 12.6613 3.09685L12.8585 2.91229C13.2523 2.54364 13.8675 2.55379 14.249 2.93524L15.0648 3.75108C15.4462 4.13253 15.4564 4.74776 15.0877 5.14158L14.9031 5.3388C14.6018 5.66067 14.5547 6.13894 14.7287 6.54407C14.7489 6.59112 14.7685 6.63846 14.7876 6.6861C14.9514 7.09536 15.3228 7.40018 15.7634 7.41473L16.033 7.42363C16.5721 7.44144 17 7.88365 17 8.42309V9.57691C17 10.1163 16.5721 10.5586 16.033 10.5764L15.7634 10.5853C15.3228 10.5998 14.9514 10.9046 14.7876 11.3139C14.7685 11.3615 14.7489 11.4089 14.7287 11.4559C14.5547 11.8611 14.6018 12.3393 14.9031 12.6612L15.0877 12.8584C15.4564 13.2523 15.4462 13.8675 15.0648 14.2489L14.249 15.0648C13.8675 15.4462 13.2523 15.4564 12.8585 15.0877L12.6613 14.9032C12.3394 14.6018 11.8611 14.5548 11.456 14.7287C11.4089 14.7489 11.3615 14.7685 11.3139 14.7876C10.9047 14.9514 10.5999 15.3228 10.5853 15.7634L10.5764 16.033C10.5586 16.5722 10.1163 17 9.57692 17H8.42304C7.88361 17 7.44141 16.5722 7.42358 16.033L7.41467 15.7634C7.40011 15.3229 7.09529 14.9514 6.68603 14.7877C6.63839 14.7686 6.59105 14.749 6.544 14.7288C6.13884 14.5548 5.66056 14.6019 5.33867 14.9032L5.1416 15.0877C4.74778 15.4564 4.13253 15.4462 3.75109 15.0648L2.93525 14.2489C2.55382 13.8675 2.54366 13.2522 2.91229 12.8584L3.09672 12.6614C3.39805 12.3395 3.44509 11.8612 3.27115 11.456C3.25095 11.4089 3.23132 11.3616 3.21225 11.3139C3.04847 10.9046 2.67703 10.5998 2.23643 10.5853L1.96699 10.5764C1.42785 10.5586 1 10.1163 1 9.57691V8.42309C1 7.88365 1.42785 7.44144 1.96699 7.42363L2.23643 7.41474C2.67702 7.40018 3.04847 7.09535 3.21225 6.68607C3.23132 6.63843 3.25095 6.59107 3.27115 6.54402C3.44509 6.13884 3.39805 5.66052 3.09673 5.33861L2.91229 5.14156C2.54366 4.74774 2.55382 4.13253 2.93525 3.7511L3.75109 2.93524C4.13253 2.55378 4.74778 2.54363 5.1416 2.91229L5.33867 3.09677C5.66056 3.39808 6.13885 3.44516 6.54401 3.27125C6.59107 3.25105 6.63842 3.23141 6.68607 3.21234C7.09532 3.04858 7.40011 2.67716 7.41467 2.23661L7.42358 1.96696Z" stroke="#3A3A3A"/>
+              <ellipse cx="8.99976" cy="8.99976" rx="3.35425" ry="3.35425" stroke="#3A3A3A"/>
+            </svg>
+          </button>
+          <div class="settings__change-color">
+            <span class="settings__color-title">Цвет</span>
+            <div class="settings__wrapper-color">
+              <span class="settings__choose-color settings__choose-color--selected" style="background-color: #5CB1C3;"></span>
+              <button class="settings__more-color" type="button">+17</button>
+            </div>
+            <ul class="settings__choose-color-list">
+              <li class="settings__choose-color-item">
+                <span class="settings__choose-color" style="background-color: #3A3A3A;"></span>
+                <span>Черный</span>
+              </li>
+              <li class="settings__choose-color-item">
+                <span class="settings__choose-color" style="background-color: #A0A0A0;"></span>
+                <span>Серый</span>
+              </li>
+              <li class="settings__choose-color-item">
+                <span class="settings__choose-color" style="background-color: white; border: 1px solid #B3B3B3;"></span>
+                <span>Белый</span>
+              </li>
+              <li class="settings__choose-color-item">
+                <span class="settings__choose-color" style="background-color: #835D3A;"></span>
+                <span>Коричневый</span>
+              </li>
+              <li class="settings__choose-color-item">
+                <span class="settings__choose-color"></span>
+                <span>Оранжевый</span>
+              </li>
+            </ul>
+          </div>
+          <div class="settings__change-complitation">
+            <img src="/assets/img/complitation_karkas.jpg" alt="Каркас" class="settings__img">
+            <div class="settings__wrapper-complitation">
+              <span class="settings__complitation-title">Комплектация</span>
+              <span class="settings__select-complitation">чёрный каркас</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6.79961 1.19922L17.5996 11.9992L6.79961 22.7992" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="settings__change-material">
+            <img src="/assets/img/material-tekstil.jpg" alt="Текстиль" class="settings__img">
+            <div class="settings__wrapper-material">
+              <span class="settings__material-title">Материалы обивки</span>
+              <span class="settings__select-material">текстиль, сетка</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6.79961 1.19922L17.5996 11.9992L6.79961 22.7992" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="settings__change-peculiarities">
+            <div class="settings__wrapper-peculiarities">
+              <span class="settings__peculiarities-title">Особенности конструкции</span>
+              <span class="settings__select-peculiarities">базовая комплектация</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6.79961 1.19922L17.5996 11.9992L6.79961 22.7992" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="product__data-photo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/assets/img/ChairFaltoPromax_mobile_1200.png">
+            <img src="/assets/img/ChairFaltoPromax_mobile.png" alt="Кресло Falto PROMAX" width="245" height="245" class="product__main-img">
+          </picture>
+        </div>
+        <div class="product__wrapper-paggination">
+          <button class="product__btn product__btn--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M14.333 1L5.33301 10L14.333 19" stroke="#A0A0A0" stroke-linecap="round"/>
+            </svg>
+            <span>Предыдущий слайд</span>
+          </button>
+          <ul class="product__photo-list">
+            <li class="product__photo-item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/assets/img/photo1_1200.png">
+                <img src="/assets/img/photo1.png" alt="Схема">
+              </picture>
+              <span class="visually-hidden">Схема</span>
             </li>
-            <li class="filters__category-item filters__category-item--active">
-              <a href="#" class="filters__category-link">
-                <span>для руководителей</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
+            <li class="product__photo-item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/assets/img/photo2_1200.png">
+                <img src="/assets/img/photo2.png" alt="Седло">
+              </picture>
+              <span class="visually-hidden">Седло</span>
             </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>офисные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
+            <li class="product__photo-item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/assets/img/photo3_1200.png">
+                <img src="/assets/img/photo3.png" alt="Седло">
+              </picture>
+              <span class="visually-hidden">С боку</span>
             </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>для посетителей</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>геймерские</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>компьютерные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>ортопедические</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>массажные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>реклайнеры</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>эргономичные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>детские</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>аксессуары для кресел</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
+            <li class="product__photo-item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/assets/img/photo4_1200.png">
+                <img src="/assets/img/photo4.png" alt="Седло">
+              </picture>
+              <span class="visually-hidden">Сзади</span>
             </li>
           </ul>
-          <a href="#" class="filters__brands-choose">
-            <span>все бренды</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 8L7 12L3 8" stroke-linecap="round"/>
-              <path d="M7 11L7 2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                  
-          </a>
-          <ul class="filters__brands-list">
-            <li class="filters__brands-item filters__brands-item--active">
-              <a href="#" class="filters__brands-link">
-                <span>все бренды</span>                 
-              </a>
+          <button class="product__btn product__btn--next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M14.333 1L5.33301 10L14.333 19" stroke="#A0A0A0" stroke-linecap="round"/>
+            </svg>
+            <span>Следующий слайд</span>
+          </button>
+        </div>
+        <div class="product__wrapper-rate-info">
+          <p class="product__id">Артикул C-F0021-4</p>
+          <div class="product__wrapper-rate">
+            <ul class="product__rate rate">
+              <li class="rate__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39273 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39273 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" stroke="#A0A0A0" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39272 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39272 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" fill="#3A3A3A" stroke="#3A3A3A" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </li>
+              <li class="rate__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39273 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39273 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" stroke="#A0A0A0" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39272 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39272 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" fill="#3A3A3A" stroke="#3A3A3A" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </li>
+              <li class="rate__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39273 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39273 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" stroke="#A0A0A0" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39272 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39272 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" fill="#3A3A3A" stroke="#3A3A3A" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </li>
+              <li class="rate__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39273 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39273 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" stroke="#A0A0A0" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39272 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39272 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" fill="#3A3A3A" stroke="#3A3A3A" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </li>
+              <li class="rate__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39273 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39273 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" stroke="#A0A0A0" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.26188 2.57481C7.53516 1.91777 8.46592 1.91777 8.73919 2.57481L9.71731 4.92648C9.83252 5.20347 10.093 5.39272 10.392 5.4167L12.9309 5.62024C13.6402 5.6771 13.9278 6.56231 13.3874 7.02524L11.4531 8.68219C11.2252 8.87736 11.1257 9.18358 11.1953 9.47538L11.7863 11.9528C11.9514 12.645 11.1984 13.1921 10.5911 12.8212L8.41754 11.4936C8.16153 11.3372 7.83955 11.3372 7.58353 11.4936L5.40994 12.8212C4.80266 13.1921 4.04966 12.645 4.21477 11.9528L4.80574 9.47538C4.87534 9.18358 4.77585 8.87736 4.54802 8.68219L2.61369 7.02524C2.07327 6.56231 2.36089 5.6771 3.07021 5.62024L5.60904 5.4167C5.90807 5.39272 6.16856 5.20347 6.28377 4.92648L7.26188 2.57481Z" fill="#3A3A3A" stroke="#3A3A3A" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </li>
+            </ul>
+            <span>4.8</span>
+          </div>
+          <div class="product__labels labels">
+            <span class="labels__sale">-10%</span>
+            <span class="labels__hit">Хит продаж</span>
+          </div>
+          <ul class="product__tags tags">
+            <li class="tags__item"><span class="tags__name">эргономичное</span></li>
+            <li class="tags__item"><span class="tags__name">офисное</span></li>
+          </ul>
+        </div>
+        <div class="product__wrapper-price-and-pay">
+          <b>42 300 ₽</b>
+          <span>Цена без скидки 50 590 ₽ </span>
+          <form action="#" method="post" class="product__form">
+            <button class="product__add-to-card" type="button">
+              <span>Добавить в корзину</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M15.16 13.5101H7.26919C6.55583 13.5101 5.97754 12.9202 5.97754 12.1924C5.97754 11.4646 6.55583 10.8746 7.26919 10.8746H14.7702C15.3993 10.8746 15.939 10.4169 16.0539 9.78592L16.9325 4.96094" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.88381 10.6953L4.33564 2.59637C4.0349 1.6405 3.16351 0.992188 2.17949 0.992188H0.996094" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <ellipse cx="8.24174" cy="16.0081" rx="0.905802" ry="0.924104" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <ellipse cx="13.6783" cy="16.0081" rx="0.905802" ry="0.924104" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.6072 4.48279H13.4005V5.43924H11.6072V7.23258H10.6508V5.43924H8.85742V4.48279H10.6508V2.68945H11.6072V4.48279Z" fill="#3A3A3A"/>
+              </svg>
+            </button>
+            <button class="product__submit" type="submit">Купить в 1 клик</button>
+          </form>
+        </div>
+        <div class="product__equipment">
+          <p>Выбранная комплектация</p>
+          <ul>
+            <li>чёрный каркас</li>
+            <li>синий</li>
+          </ul>
+        </div>
+        <div class="product__order-information order-information">
+          <ul class="order-information__date-list">
+            <li class="order-information__date-item">
+              <p class="order-information__text-title order-information__text-title--active">Под заказ</p>
+              <p class="order-information__text-description">25 ноября</p>
             </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Dauphin</span>                 
-              </a>
+            <li class="order-information__date-item">
+              <p class="order-information__text-title">В шоуруме</p>
+              <p class="order-information__text-description">2 штуки</p>
             </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Dazato</span>                 
-              </a>
+          </ul>
+          <div class="order-information__wrapper-pay">
+            <span>Оплата</span>
+            <ul class="order-information__pay-list">
+              <li class="order-information__pay-item">онлайн на сайте</li>
+              <li class="order-information__pay-item">при получении </li>
+              <li class="order-information__pay-item">в рассрочку</li>
+            </ul>
+          </div>
+          <ul class="orider-information__delivery-list">
+            <li class="orider-information__delivery-item">
+              <p class="order-information__text-title">Доставка<br/>до двери</p>
+              <p class="order-information__text-description">2-3 дня<br/>Бесплатно</p>
             </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Expert</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Falto</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>GTChair</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Interstuhl</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Kulik System</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Luxy</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Milani</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>New Line Office</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Okamura</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Profoffice</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Sintetica</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Wilkhahn</span>                 
-              </a>
+            <li class="orider-information__delivery-item">
+              <p class="order-information__text-title">Самовывоз<br/>из шоурума</p>
+              <p class="order-information__text-description">1 день<br/>Бесплатно</p>
             </li>
           </ul>
         </div>
+        <div class="product__characteristics characteristics">
+          <ul class="characteristics__list">
+            <li class="characteristics__item">
+              <p class="characteristics__title">Габариты (В x Ш x Г)</p>
+              <p class="characteristics__description">1100 x 72 x 54 см</p>
+            </li>
+            <li class="characteristics__item">
+              <p class="characteristics__title">Обивка</p>
+              <p class="characteristics__description">Текстиль, сетка, экокожа</p>
+            </li>
+            <li class="characteristics__item">
+              <p class="characteristics__title">Производство</p>
+              <p class="characteristics__description">Корея</p>
+            </li>
+            <li class="characteristics__item">
+              <p class="characteristics__title">Бренд</p>
+              <p class="characteristics__description">Falto</p>
+            </li>
+          </ul>
+          <a href="#" class="characteristics__link">Все характеристики</a>
+        </div>
+      </div>
+    </section>
+    <section class="page__advantages advantages">
+      <div class="advantages__container container">
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantanges__item">
+            <div class="advantages__wrapper-img">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.9308 21.882L11.2158 25.6788C8.8915 25.1877 6.37308 25.8447 4.56799 27.6498C1.72994 30.4879 1.72994 35.0893 4.56799 37.9273C7.40604 40.7654 12.0074 40.7654 14.8455 37.9273C16.6506 36.1222 17.3076 33.6038 16.8165 31.2795L21.6929 26.5573M26.3787 21.7729L29.6237 18.4717C31.9274 19.9956 34.5152 20.6118 36.8781 18.2489C40.5576 14.5693 40.6656 10.4727 40.1243 8.69973L35.9359 12.8882C35.3574 13.4666 34.4196 13.4667 33.8411 12.8882L29.6072 8.65425C29.0287 8.0758 29.0287 7.13794 29.6072 6.55949L33.7956 2.37103C32.0227 1.82973 27.926 1.93775 24.2465 5.61725C21.8835 7.98021 22.4997 10.568 24.0237 12.8717L21.6929 15.2025" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M6.90682 29.9884L10.7321 28.9634L13.5324 31.7637L12.5074 35.589L8.68215 36.614L5.88184 33.8137L6.90682 29.9884Z" stroke="#FF8B20" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M18.8598 21.298L7.50928 9.94747L5.40802 10.0519L1.63672 4.18588L3.98813 1.83447L9.8542 5.60578L9.74973 7.70688L21.1004 19.0575M26.1062 26.3039L34.938 35.1358M21.9578 18.2C22.5362 17.6216 23.4741 17.6215 24.0525 18.2L24.4593 18.6067C24.7753 18.9228 24.9187 19.346 24.8894 19.7594C24.8542 20.256 24.8469 20.8257 25.1989 21.1777L26.409 22.3878C26.7019 22.6808 27.1472 22.7348 27.56 22.6999C28.1197 22.6526 28.6956 22.8431 29.1239 23.2713L38.7158 32.8633C40.3865 34.534 40.3865 37.2428 38.7158 38.9135C37.0452 40.5841 34.3364 40.5841 32.6657 38.9134L23.0737 29.3215C22.6455 28.8933 22.455 28.3173 22.5023 27.7576C22.5372 27.3448 22.4831 26.8995 22.1902 26.6066L20.9802 25.3965C20.6281 25.0445 20.0584 25.0519 19.5618 25.087C19.1484 25.1163 18.7251 24.973 18.409 24.657L18.0023 24.2502C17.4238 23.6718 17.4239 22.7339 18.0023 22.1555L21.9578 18.2Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>                
+            </div>
+            <span>Бесплатная сборка и регулировка мебели</span>
+          </li>
+          <li class="advantanges__item">
+            <div class="advantages__wrapper-img">
+              <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.6445 25.2382C22.6445 23.1165 24.3645 21.3965 26.4863 21.3965H33.2181C33.9967 21.3965 34.6279 22.0277 34.6279 22.8063V27.6701C34.6279 28.4488 33.9967 29.08 33.2181 29.08H26.4863C24.3645 29.08 22.6445 27.36 22.6445 25.2382Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"></path>
+                <circle cx="26.4865" cy="25.238" r="1.12814" fill="#D7D7D7"></circle>
+                <path d="M13.5513 3.77393H9.201C8.81169 3.77393 8.49609 4.08952 8.49609 4.47883V14.0656" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"></path>
+                <path d="M30.398 14.0652V2.29328C30.398 1.90398 30.0824 1.58838 29.6931 1.58838H14.2557C13.8664 1.58838 13.5508 1.90398 13.5508 2.29328V14.0652" stroke="#FF8B20" stroke-width="1.7037" stroke-linejoin="round"></path>
+                <path d="M27.3679 14.0653C27.3679 11.1065 24.9694 8.70801 22.0106 8.70801C19.0519 8.70801 16.6533 11.1065 16.6533 14.0653" stroke="#FF8B20" stroke-width="1.7037" stroke-linejoin="round"></path>
+                <path d="M1.0752 10.5405V32.886C1.0752 34.8326 2.65318 36.4106 4.59972 36.4106H31.0329C32.2008 36.4106 33.1476 35.4638 33.1476 34.2959V29.0796M22.856 14.0651H31.0329C32.2008 14.0651 33.1476 15.0118 33.1476 16.1798V21.3961" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"></path>
+                <path d="M8.53122 7.15723H4.52924C2.62162 7.15723 1.0752 8.70365 1.0752 10.6113C1.0752 12.5189 2.62162 14.0653 4.52923 14.0653H22.856" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"></path>
+              </svg>                
+            </div>
+            <span>Оплата наличными, банковскими картами, при получении</span>
+          </li>
+          <li class="advantanges__item">
+            <div class="advantages__wrapper-img">
+              <svg width="37" height="46" viewBox="0 0 37 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.70605 21.3553L16.0979 15.3911L30.4898 21.3553L16.0979 27.3194L1.70605 21.3553Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1.70605 21.3555L1.70608 38.5093L16.0979 44.4734L16.0979 27.3196" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M30.4893 21.3555L30.4893 26.2984M16.0974 44.4734L30.4892 38.5093L30.4892 30.5225" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M23.0979 18.2959L8.70605 24.2601V29.3921" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M35.5681 23.0918C34.1984 28.0278 30.2124 31.8755 25.1973 33.0475" stroke="#FF8B20" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M7.55097 1.3855L1.25684 8.05285L7.55097 14.7202C7.82538 15.0109 8.31401 14.8167 8.31401 14.4169V10.8605H20.895C29.1313 10.8605 35.8 15.3131 35.4662 23.4436C35.866 22.1367 36.0811 20.7492 36.0811 19.3114C36.0811 11.5209 29.7657 5.20548 21.9752 5.20548H8.31401V1.68877C8.31401 1.28902 7.82538 1.09481 7.55097 1.3855Z" stroke="#FF8B20" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>                
+            </div>
+            <span>Защита покупателя 14 дней на возврат</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="product__section-description section-description">
+      <div class="section-description__container container">
+        <ul class="section-description__plan-list">
+          <li class="section-description__plan-item section-description__plan-item--active">
+            <a href="#" class="section-description__plan-link">Описание</a>
+          </li>
+          <li class="section-description__plan-item">
+            <a href="#" class="section-description__plan-link">Характеристики</a>
+          </li>
+          <li class="section-description__plan-item">
+            <a href="#" class="section-description__plan-link">Гарантия</a>
+          </li>
+          <li class="section-description__plan-item">
+            <a href="#" class="section-description__plan-link">Инструкции и файлы</a>
+          </li>
+          <li class="section-description__plan-item">
+            <a href="#" class="section-description__plan-link">Сборка</a>
+          </li>
+          <li class="section-description__plan-item">
+            <a href="#" class="section-description__plan-link">Отзывы (3)</a>
+          </li>
+          <li class="section-description__plan-item">
+            <a href="#" class="section-description__plan-link">Вопросы (1)</a>
+          </li>
+        </ul>
+        <div class="section-description__text">
+          <div class="section-description__wrapper-top-text">
+            <h2>Эргономичное офисное кресло Falto Promax</h2>
+            <p>Известный производитель — корейская компания Falto презентовала своим потенциальным покупателям оригинальное кресло. Модель изделия представлена в нескольких цветах. Компании удалось не только предложить оригинальный дизайн, но и презентовать довольно нестандартный внешний вид кресла. С точки зрения эргономики и функциональности, Falto Promax является прекрасным образцом.</p>
+            <h3>Преимущества изделия:</h3>
+            <ol>
+              <li>Универсальность. Модель кресла выглядит презентабельно, поэтому она найдет себе место в различных помещениях, где, например, преобладает стиль хай-тек, минимализм, экостиль. Благодаря индивидуальным особенностям, кресло Promax подойдет людям разного возраста и пола. 
+              </li>
+              <li>Комфорт. Говоря о комфорте, нужно акцентировать внимание на прочности и функциональности механизмов. Эргономичное кресло удобное, и это факт. В нем очень легко изменять положения каждого отдельного элемента. Хотите сдвинуть подголовник или приподнять сидение, а, возможно, изменить высоту подлокотников, немного отклонить спинку. Все это можно сделать, поскольку газпатрон SAMHONGSA надежно фиксирует нужную высоту сидения, синхромеханизм DONATI позволяет регулировать глубину посадки, 3D-подлокотники легко выдвигаются.</li>
+              <li>Материал-основа. Спинка кресла выполнена из суперпрочной сетки, которая обеспечивает необходимую терморегуляцию. Все ткани являются прочными, что обеспечивает надежность в процессе эксплуатации, а также гарантию сохранения презентабельного внешнего вида долгое время.</li>
+            </ol> 
+          </div>      
+          <div class="section-description__wrapper-top-img">
+            <img src="/assets/img/des1.jpg" alt="photo1">
+            <img src="/assets/img/des2.jpg" alt="photo2">
+          </div>
+          <h3>Синхромеханизм Donati</h3>
+          <p>Подголовник с 3D-регулировками — настройки по высоте, а также под совершенно любым углом наклона. Бережно поддерживает голову и мышцы шеи, обладает ортопедическим обхватом, то есть — препятствует неправильному расположению головы во избежание появления напряжения, затекания мышц и прочих дискомфортных ощущений.</p>
+          <h3>Сиденье с эффектом памяти</h3>
+          <p>Минимальная степень усадки сидений при нагрузке 100-120 кг/см2 обеспечивается за счет индивидуального отлива по инновационной системе Вакуум-форма. В качестве наполнителя используется ППУ высокой плотности с эффектом пены памяти (ElasticFoamMemory).</p>
+          <p>Эргономичное кресло Falto с легкостью подстраивается под индивидуальные потребности и анатомические параметры пользователя. Мы рекомендуем выполнить настройку конфигурации перед началом эксплуатации. Регулировка осуществляется в одно движение без использования дополнительных инструментов.</p>
+          <p>Сиденье может регулироваться и по высоте, и по глубине – благодаря наличию механизма слайдер. Научно доказано: только глубокая посадка помогает сохранить правильную осанку, а, соответственно, и здоровье позвоночника.</p>
+          <h3>3D-подлокотники Falto Promax</h3>
+          <p>Основным инновационным компонентом конструкции Falto считаются 3D-подлокотники с регулировкой по выдвижению, наклону и высоте. Мы советуем прислушаться к выводам сотрудников лаборатории эргономики, которые рекомендуют использовать сдвинутые к спинке подлокотники. Как показывают исследования, подобное положение позволит повысить комфортабельность мебели во время продолжительной эксплуатации. Тройной режим регулировки расширяет функциональность подлокотников, ощутимо снижая нагрузку на плечевой пояс. С креслом Aon вы забудете о свисающих локтях, затекших мышцах и болях в шейном отделе позвоночника.</p>
+          <h3>Дизайн и обивка Falto Promax</h3>
+          <p>Обширный выбор вариантов сборки позволит настроить внешний вид кресла с учетом личных предпочтений пользователя. Конструкционные компоненты кресла изготовлены из укрепленного пластика белого и черного цвета. В зависимости от комплектации для обивки используется прочная ткань или мебельная сетка совместного производства корейской компании WINTEX и американского бренда DuPont.</p>
+          <p>Подголовник обит серой или черной эко-кожей класса LUX. Этот материал используется в производстве элитных моделей кресел, которые идеально впишутся в эксклюзивный дизайн кабинета руководителя.</p>
+          <div class="section-description__wrapper-bottom-img">
+            <img src="/assets/img/des3.jpg" alt="photo3">
+            <img src="/assets/img/des4.jpg" alt="photo4">
+            <img src="/assets/img/des5.jpg" alt="photo5">
+          </div>
+        </div>
+        <div class="section-description__text">
+          <h2>Эргономичные кресла и стулья от компании ERGO-STORE</h2>
+          <p>Группа компаний эргономичной мебели ERGO-STORE предлагает купить кресла руководителя в любом дизайне, с расширенным функционалом, из элитных материалов изготовления. Традиционно для офисного кресла руководителя выбирается модель высшей категории, внушительных размеров и с дорогими материалами обивки. Это необходимо чтобы создать повышенный комфорт и подчеркнуть высокий статус. Согласно многочисленным отзывам, в Москве пользуются популярностью эргономичные кресла, которые позволяют занять максимально удобное и правильное положение, правильно распределить нагрузку на позвоночник.</p>
+          <h3>Основные параметры кресла руководителя из кожи</h3>
+          <p>Многие предпочитают кресло для руководителя купить в соответствии со следующими параметрами:</p>
+          <ul>
+            <li>
+              Наличие эргономичных механизмов. Часто руководители проводят за рабочим креслом большую часть времени, поэтому оно должно иметь различные дополнительные возможности. Например, востребована функция качания, которая позволяет откинуться назад, расслабиться, свободно покачаться. Чем дороже модель по цене, тем в ней предусмотрено больше дополнительных функций, например, плавное качание, регулировка степени отклонения в зависимости от веса человека, возможность фиксации различных положений, а также механизмы, предотвращающие резкое отклонение.
+            </li>
+            <li>Материал обивки. Согласно отзывам покупателей, кресло руководителя кожаное до сих пор пользуется повышенной популярностью. Это объясняется тем, что кожа смотрится элитно, также материал износоустойчив, позволяет длительное время сохранять эстетическую привлекательность даже при ежедневном использовании. С помощью кресла руководителя кожаного любой кабинет приобретет презентабельный вид, проведет ассоциацию с успешностью и престижностью.
+            </li>
+            <li>Сиденье и спинка. Сегодня многие предпочитают купить кресла руководителя с анатомическими изгибами. Для максимального комфорта рекомендуется приобретать модели с широкой спинкой и сидением чтобы не чувствовать себя стесненно.
+            </li>
+            <li>Подлокотники. Как правило, покупатели предпочитают кресло для руководителя купить с подлокотниками. Это не только часть имиджа, но и комфорт. Производители предлагают большой выбор материалов изготовления, в том числе с мягкими накладками для комфортной работы.</li>
+            <li>Основание. Лучше сделать выбор в пользу моделей, которые выше по цене, но оснащены основанием из металла или качественного пластика. Также следует обратить внимание на ролики, они могут быть для разных типов поверхностей.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="page__gallery gallery">
+      <h2>Фото в интерьере</h2>
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <img src="/assets/img/gal1.jpg" alt="gallery1">
+        </li>
+      </ul>
+      <div class="gallery__wrapper-paggination">
+        <button class="gallery__btn gallery__btn--prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M17.2004 1.19922L6.40039 11.9992L17.2004 22.7992" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <a href="#" class="gallery__all-gallery">смотреть все фото</a>
+        <button class="gallery__btn gallery__btn--next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6.79961 1.19922L17.5996 11.9992L6.79961 22.7992" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+      </div>
+    </section>
+    <section class="page__products products products--similar">
+      <div class="products__container container">
+        <h2 class="products__title">Аксессуары и сопутствующие товары</h2>
         <ul class="products__category category">
           <li class="category__item card">
             <div class="card__fieldset-labels">
@@ -693,7 +783,7 @@
                 <span class="labels__new">Новинка</span>
                 <!-- labels__like--nolike убирает из избранного -->
                 <svg class="labels__like" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>                        
               </div>
             </div>
@@ -737,11 +827,11 @@
                       <button class="price__add-to-card">
                         <span class="visually-hidden">Добавить в корзину</span>
                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                         </svg>                            
                       </button>
                       <!-- Для старой цены добавляется класс price__total--old-price -->
@@ -751,11 +841,11 @@
                         <button class="price__add-to-card">
                           <span class="visually-hidden">Добавить в корзину</span>
                           <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                            <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                            <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                            <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                           </svg>                            
                         </button>
                         <button class="price__button price__button--minus" type="button"><span>-</span></button>
@@ -777,7 +867,7 @@
                 <span class="labels__hit labels__opacity">Хит продаж</span>
                 <span class="labels__new labels__opacity">Новинка</span>
                 <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>                        
               </div>
             </div>
@@ -821,11 +911,11 @@
                     <button class="price__add-to-card">
                       <span class="visually-hidden">Добавить в корзину</span>
                       <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                       </svg>                            
                     </button>
                     <div class="price__total">165 000 ₽</div>
@@ -833,11 +923,11 @@
                       <button class="price__add-to-card">
                         <span class="visually-hidden">Добавить в корзину</span>
                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                         </svg>                            
                       </button>
                       <button class="price__button price__button--minus" type="button"><span>-</span></button>
@@ -859,7 +949,7 @@
                 <span class="labels__hit labels__opacity">Хит продаж</span>
                 <span class="labels__new">Новинка</span>
                 <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>                        
               </div>
             </div>
@@ -906,11 +996,11 @@
                     <button class="price__add-to-card">
                       <span class="visually-hidden">Добавить в корзину</span>
                       <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                       </svg>                            
                     </button>
                     <div class="price__total">165 000 ₽</div>
@@ -918,11 +1008,11 @@
                       <button class="price__add-to-card">
                         <span class="visually-hidden">Добавить в корзину</span>
                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                         </svg>                            
                       </button>
                       <button class="price__button price__button--minus" type="button"><span>-</span></button>
@@ -944,7 +1034,7 @@
                 <span class="labels__hit labels__opacity">Хит продаж</span>
                 <span class="labels__new">Новинка</span>
                 <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>                        
               </div>
             </div>
@@ -990,11 +1080,11 @@
                     <button class="price__add-to-card">
                       <span class="visually-hidden">Добавить в корзину</span>
                       <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                       </svg>                            
                     </button>
                     <div class="price__total">165 000 ₽</div>
@@ -1002,11 +1092,11 @@
                       <button class="price__add-to-card">
                         <span class="visually-hidden">Добавить в корзину</span>
                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                         </svg>                            
                       </button>
                       <button class="price__button price__button--minus" type="button"><span>-</span></button>
@@ -1022,798 +1112,49 @@
             </div>
           </li>
         </ul>
-        <div class="products__wrapper_paggination">
+        <div class="products__wrapper_paggination products__wrapper_paggination--similar">
           <button class="products__pagination-button products-button-prev ">
             <span class="visually-hidden">Предыдущий товар</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.2004 1.19995L6.40039 12L17.2004 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
-            </svg>              
+              <path d="M17.2004 1.19995L6.40039 12L17.2004 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"></path>
+            </svg>               
           </button>
-          <a href="#" class="products__paggination-all">смотреть все кресла</a>
           <button class="products__pagination-button products-button-next ">
             <span class="visually-hidden">Следующий товар</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.79961 1.19995L17.5996 12L6.79961 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
-            </svg>              
+              <path d="M6.79961 1.19995L17.5996 12L6.79961 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"></path>
+            </svg>            
           </button>
         </div>
       </div>
     </section>
-    <!-- Столы -->
-    <section class="page__products products">
+    <section class="page__products products products--similar">
       <div class="products__container container">
-        <h2 class="products__title">Столы</h2>
-        <div class="products__filters filters">
-          <a href="#" class="filters__category-choose">
-            <span>все категории</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 8L7 12L3 8" stroke-linecap="round"/>
-              <path d="M7 11L7 2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                  
-          </a>
-          <ul class="filters__category-list">
-            <li class="filters__category-item filters__category-item--active">
-              <a href="#" class="filters__category-link">
-                <span>все</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                   
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>обеденные группы</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>обеденные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>раздвижные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>раскладные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>журнальные и кофейные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>придиванные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>офисные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>с регулировкой высоты</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>на колесиках</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>многофункциональные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>кухонные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>для гостиной</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>консольные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>барные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>аксессуары для столов</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="filters__brands-choose">
-            <span>все бренды</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 8L7 12L3 8" stroke-linecap="round"/>
-              <path d="M7 11L7 2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                  
-          </a>
-          <ul class="filters__brands-list">
-            <li class="filters__brands-item filters__brands-item--active">
-              <a href="#" class="filters__brands-link">
-                <span>все бренды</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Bradex Home</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Rudolf</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Aida</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Oslo</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Kulik System</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Liverpool</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Kulik System</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Marcel</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>New Line Office</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Vito</span>                 
-              </a>
-            </li>
-          </ul>
-        </div>
+        <h2 class="products__title">Похожие товары</h2>
         <ul class="products__category category">
-          <li class="category__item card">
-            <div class="card__fieldset-labels">
-              <div class="card__labes labels">
-                <span class="labels__sale labels__opacity">-10%</span>
-                <span class="labels__hit">Хит продаж</span>
-                <span class="labels__new labels__opacity">Новинка</span>
-                <!-- labels__like--nolike убирает из избранного -->
-                <svg class="labels__like" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                        
-              </div>
-            </div>
-            <div class="card__fieldset-characteristics">
-              <a href="#" class="card__link">
-                <picture>
-                  <img src="./assets/img/rudolf.jpg" alt="Rudolf" class="card__photo" width="273" height="286">
-                </picture>
-                <b class="card__name">Rudolf Дуб Вотан<br/>100-130*100*75 см</b>
-              </a>
-              <span class="card__status">в наличии</span>
-              <ul class="card__tags tags">
-                <li class="tags__item"><span class="tags__name">круглый</span></li>
-                <li class="tags__item"><span class="tags__name">раскладной</span></li>
-              </ul>
-              <ul class="card__colors colors">
-                <li class="colors__item colors__item--brown " data-color="#835D3A">
-                  <span class="visually-hidden">Коричневый</span>
-                </li>
-                <li class="colors__item colors__item--gray">
-                  <span class="visually-hidden">Серый</span>
-                </li>
-                <li class="colors__item colors__item--blue">
-                  <span class="visually-hidden">Синий</span>
-                </li>
-                <li class="colors__item colors__item--black">
-                  <span class="visually-hidden">Черный</span>
-                </li>
-              </ul>
-            </div>
-            <div class="card__fieldset-pay">
-              <form action="#" method="post" class="card__form card__form--old-price">
-                <div class="card__price price price--old-price">
-                    <div class="price__wrapper">
-                      <button class="price__add-to-card">
-                        <span class="visually-hidden">Добавить в корзину</span>
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
-                        </svg>                            
-                      </button>
-                      <!-- Для старой цены добавляется класс price__total--old-price -->
-                      <div class="price__total price__total--old-price">18 990 ₽</div> 
-                      <!-- Если нажата кнопка в корзину но класс price__quantity--add-to-card удаляется. По умолчанию он есть у элмента -->
-                      <div class="price__quantity">
-                        <button class="price__add-to-card">
-                          <span class="visually-hidden">Добавить в корзину</span>
-                          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
-                          </svg>                            
-                        </button>
-                        <button class="price__button price__button--minus" type="button"><span>-</span></button>
-                        <label class="price__label-total">
-                          <input type="number" class="price__number" placeholder="1" value="1">
-                        </label>
-                        <button class="price__button price__button--plus" type="button"><span>+</span></button>
-                      </div>
-                    </div>
-                  <button class="price__submit" type="submit">Купить в 1 клик</button>
-                </div>
-              </form>
-            </div>
-          </li>
-          <li class="category__item card">
-            <div class="card__fieldset-labels">
-              <div class="card__labes labels">
-                <span class="labels__sale">-%</span>
-                <span class="labels__hit labels__opacity">Хит продаж</span>
-                <span class="labels__new labels__opacity">Новинка</span>
-                <svg class="labels__like" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                        
-              </div>
-            </div>
-            <div class="card__fieldset-characteristics">
-              <a href="#" class="card__link">
-                <picture>
-                  <img src="./assets/img/aida.jpg" alt="Aida table" class="card__photo" width="273" height="286">
-                </picture>
-                <b class="card__name">Aida Палисандр, темный<br/>орех 90 см</b>
-              </a>
-              <span class="card__status card__status--to-order">под заказ</span>
-              <ul class="card__tags tags">
-                <li class="tags__item"><span class="tags__name">круглый</span></li>
-              </ul>
-              <ul class="card__colors colors">
-                <li class="colors__item colors__item--brown colors__item--active">
-                  <span class="visually-hidden">Коричневый</span>
-                </li>
-                <li class="colors__item colors__item--gray">
-                  <span class="visually-hidden">Серый</span>
-                </li>
-                <li class="colors__item colors__item--blue">
-                  <span class="visually-hidden">Синий</span>
-                </li>
-                <li class="colors__item colors__item--black">
-                  <span class="visually-hidden">Черный</span>
-                </li>
-              </ul>
-            </div>
-            <div class="card__fieldset-pay">
-              <form action="#" method="post" class="card__form">
-                <div class="card__price price">
-                  <div class="price__wrapper">
-                    <button class="price__add-to-card">
-                      <span class="visually-hidden">Добавить в корзину</span>
-                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
-                      </svg>                            
-                    </button>
-                    <div class="price__total">20 370 ₽</div>
-                    <div class="price__quantity price__quantity--add-to-card">
-                      <button class="price__add-to-card">
-                        <span class="visually-hidden">Добавить в корзину</span>
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
-                        </svg>                            
-                      </button>
-                      <button class="price__button price__button--minus" type="button"><span>-</span></button>
-                      <label class="price__label-total">
-                        <input type="number" class="price__number" placeholder="1" value="1">
-                      </label>
-                      <button class="price__button price__button--plus" type="button"><span>+</span></button>
-                    </div>
-                  </div>
-                  <button class="price__submit" type="submit">Купить в 1 клик</button>
-                </div>
-              </form>
-            </div>
-          </li>
-          <li class="category__item card">
-            <div class="card__fieldset-labels">
-              <div class="card__labes labels">
-                <span class="labels__sale labels__opacity">-10%</span>
-                <span class="labels__hit labels__opacity">Хит продаж</span>
-                <span class="labels__new labels__opacity">Новинка</span>
-                <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                        
-              </div>
-            </div>
-            <div class="card__fieldset-characteristics">
-              <a href="#" class="card__link">
-                <picture>
-                  <img src="./assets/img/oslo.jpg" alt="Oslo table" class="card__photo" width="273" height="286">
-                </picture>
-                <b class="card__name">Oslo Бетон Портленд<br/>110-140*110*76 см</b>
-              </a>
-              <!-- card__status--to-order класс говорит что нет в наличии -->
-              <span class="card__status card__status--to-order">под заказ</span>
-              <ul class="card__tags tags">
-                <li class="tags__item"><span class="tags__name">кресло руководителя</span></li>
-                <li class="tags__item"><span class="tags__name">эргономичное</span></li>
-              </ul>
-              <ul class="card__colors colors">
-                <li class="colors__item colors__item--brown colors__item--active">
-                  <span class="visually-hidden">Коричневый</span>
-                </li>
-                <li class="colors__item colors__item--gray">
-                  <span class="visually-hidden">Серый</span>
-                </li>
-                <li class="colors__item colors__item--blue">
-                  <span class="visually-hidden">Синий</span>
-                </li>
-                <li class="colors__item colors__item--black">
-                  <span class="visually-hidden">Черный</span>
-                </li>
-                <li class="colors__item colors__item__more-colors">
-                  <span>+8</span>
-                </li>
-              </ul>
-            </div>
-            <div class="card__fieldset-pay">
-              <form action="#" method="post" class="card__form">
-                <div class="card__price price">
-                  <div class="price__wrapper">
-                    <button class="price__add-to-card">
-                      <span class="visually-hidden">Добавить в корзину</span>
-                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
-                      </svg>                            
-                    </button>
-                    <div class="price__total">32 990 ₽</div>
-                    <div class="price__quantity price__quantity--add-to-card">
-                      <button class="price__add-to-card">
-                        <span class="visually-hidden">Добавить в корзину</span>
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
-                        </svg>                            
-                      </button>
-                      <button class="price__button price__button--minus" type="button"><span>-</span></button>
-                      <label class="price__label-total">
-                        <input type="number" class="price__number" placeholder="1" value="1">
-                      </label>
-                      <button class="price__button price__button--plus" type="button"><span>+</span></button>
-                    </div>
-                  </div>
-                  <button class="price__submit" type="submit">Купить в 1 клик</button>
-                </div>
-              </form>
-            </div>
-          </li>
-        </ul>
-        <div class="products__wrapper_paggination">
-          <button class="products__pagination-button products-button-prev ">
-            <span class="visually-hidden">Предыдущий товар</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.2004 1.19995L6.40039 12L17.2004 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
-            </svg>              
-          </button>
-          <a href="#" class="products__paggination-all">смотреть все кресла</a>
-          <button class="products__pagination-button products-button-next ">
-            <span class="visually-hidden">Следующий товар</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.79961 1.19995L17.5996 12L6.79961 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
-            </svg>              
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- Диваны -->
-    <section class="page__products products">
-      <div class="products__container container">
-        <h2 class="products__title">Диваны</h2>
-        <div class="products__filters filters">
-          <a href="#" class="filters__category-choose">
-            <span>все категории</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 8L7 12L3 8" stroke-linecap="round"/>
-              <path d="M7 11L7 2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                  
-          </a>
-          <ul class="filters__category-list">
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>все</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                   
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>прямыей</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>угловые</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>модульные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>слайдеры</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>раскладные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>кушетки</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item filters__category-item--active">
-              <a href="#" class="filters__category-link">
-                <span>мини-диваны</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>диваны-кровати</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>ортопедические</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>офисные</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>детские</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-            <li class="filters__category-item">
-              <a href="#" class="filters__category-link">
-                <span>аксессуары для диванов</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11133 3.11078L10.8895 10.889" stroke="white" stroke-linecap="round"/>
-                  <path d="M10.8887 3.11084L3.1105 10.889" stroke="white" stroke-linecap="round"/>
-                </svg>                            
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="filters__brands-choose">
-            <span>все бренды</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 8L7 12L3 8" stroke-linecap="round"/>
-              <path d="M7 11L7 2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                  
-          </a>
-          <ul class="filters__brands-list">
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>все бренды</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item filters__brands-item--active">
-              <a href="#" class="filters__brands-link">
-                <span>Bram</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Divanger</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Express</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Falto</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Expert</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Scandica</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Sleepformer</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Льери</span>                 
-              </a>
-            </li>
-            <li class="filters__brands-item">
-              <a href="#" class="filters__brands-link">
-                <span>Формула дивана</span>                 
-              </a>
-            </li>
-          </ul>
-        </div>
-        <ul class="products__category category">
-          <li class="category__item card">
-            <div class="card__fieldset-labels">
-              <div class="card__labes labels">
-                <span class="labels__sale labels__opacity">-10%</span>
-                <span class="labels__hit labels__opacity">Хит продаж</span>
-                <span class="labels__new labels__opacity">Новинка</span>
-                <!-- labels__like--nolike убирает из избранного -->
-                <svg class="labels__like" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                        
-              </div>
-            </div>
-            <div class="card__fieldset-characteristics">
-              <a href="#" class="card__link">
-                <picture>
-                  <img src="./assets/img/scandicaMay.jpg" alt="Ыcandica May" class="card__photo" width="273" height="286">
-                </picture>
-                <b class="card__name">Scandica Мей,<br/>144 см</b>
-              </a>
-              <span class="card__status">в наличии</span>
-              <ul class="card__tags tags">
-                <li class="tags__item"><span class="tags__name">мини-диваны</span></li>
-                <li class="tags__item"><span class="tags__name">прямой</span></li>
-              </ul>
-              <ul class="card__colors colors">
-                <li class="colors__item colors__item--brown colors__item--active">
-                  <span class="visually-hidden">Коричневый</span>
-                </li>
-                <li class="colors__item colors__item--gray">
-                  <span class="visually-hidden">Серый</span>
-                </li>
-                <li class="colors__item colors__item--blue">
-                  <span class="visually-hidden">Синий</span>
-                </li>
-                <li class="colors__item colors__item--black">
-                  <span class="visually-hidden">Черный</span>
-                </li>
-                <li class="colors__item colors__item--white ">
-                  <span class="visually-hidden">Белый</span>
-                </li>
-                <li class="colors__item colors__item__more-colors">
-                  <span>+10</span>
-                </li>
-              </ul>
-            </div>
-            <div class="card__fieldset-pay">
-              <form action="#" method="post" class="card__form card__form--old-price">
-                <div class="card__price price price--old-price">
-                    <div class="price__wrapper">
-                      <button class="price__add-to-card">
-                        <span class="visually-hidden">Добавить в корзину</span>
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
-                        </svg>                            
-                      </button>
-                      <!-- Для старой цены добавляется класс price__total--old-price -->
-                      <div class="price__total price__total--old-price">25 990 ₽</div> 
-                      <!-- Если нажата кнопка в корзину но класс price__quantity--add-to-card удаляется. По умолчанию он есть у элмента -->
-                      <div class="price__quantity">
-                        <button class="price__add-to-card">
-                          <span class="visually-hidden">Добавить в корзину</span>
-                          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
-                          </svg>                            
-                        </button>
-                        <button class="price__button price__button--minus" type="button"><span>-</span></button>
-                        <label class="price__label-total">
-                          <input type="number" class="price__number" placeholder="1" value="1">
-                        </label>
-                        <button class="price__button price__button--plus" type="button"><span>+</span></button>
-                      </div>
-                    </div>
-                  <button class="price__submit" type="submit">Купить в 1 клик</button>
-                </div>
-              </form>
-            </div>
-          </li>
           <li class="category__item card">
             <div class="card__fieldset-labels">
               <div class="card__labes labels">
                 <span class="labels__sale">-10%</span>
                 <span class="labels__hit">Хит продаж</span>
-                <span class="labels__new labels__opacity">Новинка</span>
-                <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
+                <span class="labels__new">Новинка</span>
+                <!-- labels__like--nolike убирает из избранного -->
+                <svg class="labels__like" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>                        
               </div>
             </div>
             <div class="card__fieldset-characteristics">
               <a href="#" class="card__link">
                 <picture>
-                  <img src="./assets/img/lieri.jpg" alt="Lieri" class="card__photo" width="273" height="286">
+                  <img src="./assets/img/milani_nordic.jpg" alt="Milani Nordic" class="card__photo" width="273" height="286">
                 </picture>
-                <b class="card__name">Льери Velvet Light<br/>Сканди, 144 см</b>
+                <b class="card__name">Milani Nordic</b>
               </a>
               <span class="card__status">в наличии</span>
               <ul class="card__tags tags">
-                <li class="tags__item"><span class="tags__name">мини-диваны</span></li>
-                <li class="tags__item"><span class="tags__name">прямой</span></li>
+                <li class="tags__item"><span class="tags__name">кресло руководителя</span></li>
+                <li class="tags__item"><span class="tags__name">эргономичное</span></li>
               </ul>
               <ul class="card__colors colors">
                 <li class="colors__item colors__item--brown colors__item--active">
@@ -1832,7 +1173,91 @@
                   <span class="visually-hidden">Белый</span>
                 </li>
                 <li class="colors__item colors__item__more-colors">
-                  <span>+1</span>
+                  <span>+4</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card__fieldset-pay">
+              <form action="#" method="post" class="card__form card__form--old-price">
+                <div class="card__price price price--old-price">
+                    <div class="price__wrapper">
+                      <button class="price__add-to-card">
+                        <span class="visually-hidden">Добавить в корзину</span>
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                        </svg>                            
+                      </button>
+                      <!-- Для старой цены добавляется класс price__total--old-price -->
+                      <div class="price__total price__total--old-price">168 680 ₽</div> 
+                      <!-- Если нажата кнопка в корзину но класс price__quantity--add-to-card удаляется. По умолчанию он есть у элмента -->
+                      <div class="price__quantity">
+                        <button class="price__add-to-card">
+                          <span class="visually-hidden">Добавить в корзину</span>
+                          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                            <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                            <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                          </svg>                            
+                        </button>
+                        <button class="price__button price__button--minus" type="button"><span>-</span></button>
+                        <label class="price__label-total">
+                          <input type="number" class="price__number" placeholder="1" value="1">
+                        </label>
+                        <button class="price__button price__button--plus" type="button"><span>+</span></button>
+                      </div>
+                    </div>
+                  <button class="price__submit" type="submit">Купить в 1 клик</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="category__item card">
+            <div class="card__fieldset-labels">
+              <div class="card__labes labels">
+                <span class="labels__sale labels__opacity">-10%</span>
+                <span class="labels__hit labels__opacity">Хит продаж</span>
+                <span class="labels__new labels__opacity">Новинка</span>
+                <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>                        
+              </div>
+            </div>
+            <div class="card__fieldset-characteristics">
+              <a href="#" class="card__link">
+                <picture>
+                  <img src="./assets/img/okamura_contessa2.jpg" alt="Milani Nordic" class="card__photo" width="273" height="286">
+                </picture>
+                <b class="card__name">Okamura Contessa 2</b>
+              </a>
+              <span class="card__status">в наличии</span>
+              <ul class="card__tags tags">
+                <li class="tags__item"><span class="tags__name">кресло руководителя</span></li>
+                <li class="tags__item"><span class="tags__name">эргономичное</span></li>
+              </ul>
+              <ul class="card__colors colors">
+                <li class="colors__item colors__item--brown colors__item--active">
+                  <span class="visually-hidden">Коричневый</span>
+                </li>
+                <li class="colors__item colors__item--gray">
+                  <span class="visually-hidden">Серый</span>
+                </li>
+                <li class="colors__item colors__item--blue">
+                  <span class="visually-hidden">Синий</span>
+                </li>
+                <li class="colors__item colors__item--black">
+                  <span class="visually-hidden">Черный</span>
+                </li>
+                <li class="colors__item colors__item--white ">
+                  <span class="visually-hidden">Белый</span>
+                </li>
+                <li class="colors__item colors__item__more-colors">
+                  <span>+4</span>
                 </li>
               </ul>
             </div>
@@ -1843,23 +1268,23 @@
                     <button class="price__add-to-card">
                       <span class="visually-hidden">Добавить в корзину</span>
                       <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                       </svg>                            
                     </button>
-                    <div class="price__total">54 990 ₽</div>
+                    <div class="price__total">165 000 ₽</div>
                     <div class="price__quantity price__quantity--add-to-card">
                       <button class="price__add-to-card">
                         <span class="visually-hidden">Добавить в корзину</span>
                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                         </svg>                            
                       </button>
                       <button class="price__button price__button--minus" type="button"><span>-</span></button>
@@ -1879,21 +1304,106 @@
               <div class="card__labes labels">
                 <span class="labels__sale labels__opacity">-10%</span>
                 <span class="labels__hit labels__opacity">Хит продаж</span>
-                <span class="labels__new labels__opacity">Новинка</span>
+                <span class="labels__new">Новинка</span>
                 <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>                        
               </div>
             </div>
             <div class="card__fieldset-characteristics">
               <a href="#" class="card__link">
                 <picture>
-                  <img src="./assets/img/bram.jpg" alt="Bram" class="card__photo" width="273" height="286">
+                  <img src="./assets/img/okamura_legender.jpg" alt="Milani Nordic" class="card__photo" width="273" height="286">
                 </picture>
-                <b class="card__name">BRAM Велюр<br/>Teddy 011, 152 см</b>
+                <b class="card__name">Okamura Legender</b>
               </a>
               <!-- card__status--to-order класс говорит что нет в наличии -->
-              <span class="card__status">в наличии</span>
+              <span class="card__status card__status--to-order">под заказ</span>
+              <ul class="card__tags tags">
+                <li class="tags__item"><span class="tags__name">кресло руководителя</span></li>
+                <li class="tags__item"><span class="tags__name">эргономичное</span></li>
+              </ul>
+              <!-- Цвета реалиовать через JS с атрибутом data-color = "цвет" -->
+              <ul class="card__colors colors">
+                <li class="colors__item colors__item--brown colors__item--active">
+                  <span class="visually-hidden">Коричневый</span>
+                </li>
+                <li class="colors__item colors__item--gray">
+                  <span class="visually-hidden">Серый</span>
+                </li>
+                <li class="colors__item colors__item--blue">
+                  <span class="visually-hidden">Синий</span>
+                </li>
+                <li class="colors__item colors__item--black">
+                  <span class="visually-hidden">Черный</span>
+                </li>
+                <li class="colors__item colors__item--white ">
+                  <span class="visually-hidden">Белый</span>
+                </li>
+                <li class="colors__item colors__item__more-colors">
+                  <span>+4</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card__fieldset-pay">
+              <!-- card__form--old-price - расширяет блок -->
+              <form action="#" method="post" class="card__form">
+                <div class="card__price price">
+                  <div class="price__wrapper">
+                    <button class="price__add-to-card">
+                      <span class="visually-hidden">Добавить в корзину</span>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                      </svg>                            
+                    </button>
+                    <div class="price__total">165 000 ₽</div>
+                    <div class="price__quantity price__quantity--add-to-card">
+                      <button class="price__add-to-card">
+                        <span class="visually-hidden">Добавить в корзину</span>
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                        </svg>                            
+                      </button>
+                      <button class="price__button price__button--minus" type="button"><span>-</span></button>
+                      <label class="price__label-total">
+                        <input type="number" class="price__number" placeholder="1" value="1">
+                      </label>
+                      <button class="price__button price__button--plus" type="button"><span>+</span></button>
+                    </div>
+                  </div>
+                  <button class="price__submit" type="submit">Купить в 1 клик</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="category__item card">
+            <div class="card__fieldset-labels">
+              <div class="card__labes labels">
+                <span class="labels__sale labels__opacity">-10%</span>
+                <span class="labels__hit labels__opacity">Хит продаж</span>
+                <span class="labels__new">Новинка</span>
+                <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>                        
+              </div>
+            </div>
+            <div class="card__fieldset-characteristics">
+              <a href="#" class="card__link">
+                <picture>
+                  <img src="./assets/img/okamura_legender.jpg" alt="Milani Nordic" class="card__photo" width="273" height="286">
+                </picture>
+                <b class="card__name">Okamura Legender</b>
+              </a>
+              <!-- card__status--to-order класс говорит что нет в наличии -->
+              <span class="card__status card__status--to-order">под заказ</span>
               <ul class="card__tags tags">
                 <li class="tags__item"><span class="tags__name">кресло руководителя</span></li>
                 <li class="tags__item"><span class="tags__name">эргономичное</span></li>
@@ -1911,20 +1421,27 @@
                 <li class="colors__item colors__item--black">
                   <span class="visually-hidden">Черный</span>
                 </li>
+                <li class="colors__item colors__item--white ">
+                  <span class="visually-hidden">Белый</span>
+                </li>
+                <li class="colors__item colors__item__more-colors">
+                  <span>+4</span>
+                </li>
               </ul>
             </div>
             <div class="card__fieldset-pay">
+              <!-- card__form--old-price - расширяет блок -->
               <form action="#" method="post" class="card__form">
                 <div class="card__price price">
                   <div class="price__wrapper">
                     <button class="price__add-to-card">
                       <span class="visually-hidden">Добавить в корзину</span>
                       <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                       </svg>                            
                     </button>
                     <div class="price__total">165 000 ₽</div>
@@ -1932,11 +1449,11 @@
                       <button class="price__add-to-card">
                         <span class="visually-hidden">Добавить в корзину</span>
                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"/>
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
                         </svg>                            
                       </button>
                       <button class="price__button price__button--minus" type="button"><span>-</span></button>
@@ -1952,279 +1469,20 @@
             </div>
           </li>
         </ul>
-        <div class="products__wrapper_paggination">
+        <div class="products__wrapper_paggination products__wrapper_paggination--similar">
           <button class="products__pagination-button products-button-prev ">
             <span class="visually-hidden">Предыдущий товар</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.2004 1.19995L6.40039 12L17.2004 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
-            </svg>              
+              <path d="M17.2004 1.19995L6.40039 12L17.2004 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"></path>
+            </svg>               
           </button>
-          <a href="#" class="products__paggination-all">смотреть все кресла</a>
           <button class="products__pagination-button products-button-next ">
             <span class="visually-hidden">Следующий товар</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.79961 1.19995L17.5996 12L6.79961 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
-            </svg>              
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="page__portfolio portfolio">
-      <div class="portfolio__container container">
-        <h2 class="portfolio__title">Проекты с мебелью от ERGOSTORE</h2>
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./assets/img/p01_1200.jpg">
-              <img src="./assets/img/p01.jpg" alt="Проект 1" width="330" height="238">
-            </picture>
-            <span class="portfolio__direction">Interstuhl Every</span>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./assets/img/p02_1200.jpg">
-              <img src="./assets/img/p02.jpg" alt="Проект 2" width="330" height="238">
-            </picture>
-            <span class="portfolio__direction">FALTO Promax</span>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./assets/img/p03_1200.jpg">
-              <img src="./assets/img/p03.jpg" alt="Проект 3" width="330" height="238">
-            </picture>
-            <span class="portfolio__direction">Samurai Lux 2</span>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./assets/img/p04_1200.jpg">
-              <img src="./assets/img/p04.jpg" alt="Проект 4" width="330" height="238">
-            </picture>
-            <span class="portfolio__direction">Okamura Legender</span>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./assets/img/p05_1200.jpg">
-              <img src="./assets/img/p05.jpg" alt="Проект 5" width="330" height="238">
-            </picture>
-            <span class="portfolio__direction">Sunon Hero</span>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./assets/img/p06_1200.jpg">
-              <img src="./assets/img/p06.jpg" alt="Проект 6" width="330" height="238">
-            </picture>
-            <span class="portfolio__direction">Interstuhl Hero</span>
-          </li>
-        </ul>
-        <a href="#" class="portfolio__link">смотреть все проекты</a>
-      </div>
-    </section>
-    <section class="page__advantages advantages">
-      <div class="advantages__container container">
-        <h2 class="advantages__title">Наши преимущества</h2>
-        <ul class="advantages__list">
-          <li class="advantanges__item">
-            <div class="advantages__wrapper-img">
-              <svg width="36" height="44" viewBox="0 0 36 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.3283 1.72168C9.94443 1.72168 7.95775 3.39515 7.7559 5.57298L6.90353 14.7716C6.67592 17.227 8.78827 19.3352 11.4759 19.3352H24.5245C27.2122 19.3352 29.3245 17.227 29.0969 14.7716L28.2445 5.57298C28.0427 3.39515 26.056 1.72168 23.6722 1.72168H12.3283Z" stroke="#D7D7D7" stroke-width="1.7037"/>
-                <path d="M8.55078 42.2783L14.1418 40.42C16.6475 39.5872 19.3553 39.5872 21.861 40.42L27.452 42.2783" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round"/>
-                <path d="M34.7297 19.3354V22.5925C34.7297 23.8953 34.1606 26.8557 30.501 27.9848" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M1.27127 19.3354V22.5925C1.27127 23.8953 1.84037 26.8557 5.5 27.9848" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18.001 19.3354L18.001 25.6372" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"/>
-                <path d="M14.8496 7.92676H21.1513" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M14.2119 12.6758H21.7892" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18.001 31.6104V39.7956" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"/>
-                <path d="M6.43116 28.75C7.40708 26.8584 9.60546 25.6367 12.0336 25.6367H23.9676C26.3957 25.6367 28.5941 26.8584 29.57 28.75L30.2397 30.0479C30.6833 30.9079 29.9429 31.8723 28.839 31.8723H7.16216C6.0583 31.8723 5.31788 30.9079 5.76154 30.0479L6.43116 28.75Z" stroke="#FF8B20" stroke-width="1.7037"/>
-              </svg>
-            </div>           
-            <span>Опыт в установке и насройке кресел более 5 лет</span>
-          </li>
-          <li class="advantanges__item">
-            <div class="advantages__wrapper-img">
-              <svg width="46" height="43" viewBox="0 0 46 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.62958 3.25149L9.94597 0.856105L19.8149 30.9996M44.1751 27.7883L25.5377 33.9204" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M34.2983 12.8375L30.8251 2.22893L15.9482 7.09961L19.4215 17.7082" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="21.1621" cy="35.3437" r="1.26027" transform="rotate(-18.1284 21.1621 35.3437)" fill="#D7D7D7"/>
-                <path d="M23.3867 4.66406L25.0003 9.59252" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <rect x="19.4209" y="17.7075" width="15.6539" height="13.742" transform="rotate(-18.1284 19.4209 17.7075)" stroke="#FF8B20" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M26.8594 15.2729L28.4729 20.2014" stroke="#FF8B20" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="21.1629" cy="35.3436" r="4.55405" transform="rotate(-18.1284 21.1629 35.3436)" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>           
-            <span>Оперативная доставка и сборка в день обращения</span>
-          </li>
-          <li class="advantanges__item">
-            <div class="advantages__wrapper-img">
-              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.9308 21.882L11.2158 25.6788C8.8915 25.1877 6.37308 25.8447 4.56799 27.6498C1.72994 30.4879 1.72994 35.0893 4.56799 37.9273C7.40604 40.7654 12.0074 40.7654 14.8455 37.9273C16.6506 36.1222 17.3076 33.6038 16.8165 31.2795L21.6929 26.5573M26.3787 21.7729L29.6237 18.4717C31.9274 19.9956 34.5152 20.6118 36.8781 18.2489C40.5576 14.5693 40.6656 10.4727 40.1243 8.69973L35.9359 12.8882C35.3574 13.4666 34.4196 13.4667 33.8411 12.8882L29.6072 8.65425C29.0287 8.0758 29.0287 7.13794 29.6072 6.55949L33.7956 2.37103C32.0227 1.82973 27.926 1.93775 24.2465 5.61725C21.8835 7.98021 22.4997 10.568 24.0237 12.8717L21.6929 15.2025" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6.90682 29.9884L10.7321 28.9634L13.5324 31.7637L12.5074 35.589L8.68215 36.614L5.88184 33.8137L6.90682 29.9884Z" stroke="#FF8B20" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18.8598 21.298L7.50928 9.94747L5.40802 10.0519L1.63672 4.18588L3.98813 1.83447L9.8542 5.60578L9.74973 7.70688L21.1004 19.0575M26.1062 26.3039L34.938 35.1358M21.9578 18.2C22.5362 17.6216 23.4741 17.6215 24.0525 18.2L24.4593 18.6067C24.7753 18.9228 24.9187 19.346 24.8894 19.7594C24.8542 20.256 24.8469 20.8257 25.1989 21.1777L26.409 22.3878C26.7019 22.6808 27.1472 22.7348 27.56 22.6999C28.1197 22.6526 28.6956 22.8431 29.1239 23.2713L38.7158 32.8633C40.3865 34.534 40.3865 37.2428 38.7158 38.9135C37.0452 40.5841 34.3364 40.5841 32.6657 38.9134L23.0737 29.3215C22.6455 28.8933 22.455 28.3173 22.5023 27.7576C22.5372 27.3448 22.4831 26.8995 22.1902 26.6066L20.9802 25.3965C20.6281 25.0445 20.0584 25.0519 19.5618 25.087C19.1484 25.1163 18.7251 24.973 18.409 24.657L18.0023 24.2502C17.4238 23.6718 17.4239 22.7339 18.0023 22.1555L21.9578 18.2Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>                
-            </div>
-            <span>Бесплатная сборка и регулировка мебели</span>
-          </li>
-          <li class="advantanges__item">
-            <div class="advantages__wrapper-img">
-              <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.6445 25.2382C22.6445 23.1165 24.3645 21.3965 26.4863 21.3965H33.2181C33.9967 21.3965 34.6279 22.0277 34.6279 22.8063V27.6701C34.6279 28.4488 33.9967 29.08 33.2181 29.08H26.4863C24.3645 29.08 22.6445 27.36 22.6445 25.2382Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"/>
-                <circle cx="26.4865" cy="25.238" r="1.12814" fill="#D7D7D7"/>
-                <path d="M13.5513 3.77393H9.201C8.81169 3.77393 8.49609 4.08952 8.49609 4.47883V14.0656" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"/>
-                <path d="M30.398 14.0652V2.29328C30.398 1.90398 30.0824 1.58838 29.6931 1.58838H14.2557C13.8664 1.58838 13.5508 1.90398 13.5508 2.29328V14.0652" stroke="#FF8B20" stroke-width="1.7037" stroke-linejoin="round"/>
-                <path d="M27.3679 14.0653C27.3679 11.1065 24.9694 8.70801 22.0106 8.70801C19.0519 8.70801 16.6533 11.1065 16.6533 14.0653" stroke="#FF8B20" stroke-width="1.7037" stroke-linejoin="round"/>
-                <path d="M1.0752 10.5405V32.886C1.0752 34.8326 2.65318 36.4106 4.59972 36.4106H31.0329C32.2008 36.4106 33.1476 35.4638 33.1476 34.2959V29.0796M22.856 14.0651H31.0329C32.2008 14.0651 33.1476 15.0118 33.1476 16.1798V21.3961" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"/>
-                <path d="M8.53122 7.15723H4.52924C2.62162 7.15723 1.0752 8.70365 1.0752 10.6113C1.0752 12.5189 2.62162 14.0653 4.52923 14.0653H22.856" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"/>
-              </svg>                
-            </div>
-            <span>Оплата наличными, банковскими картами, при получении</span>
-          </li>
-          <li class="advantanges__item">
-            <div class="advantages__wrapper-img">
-              <svg width="34" height="44" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="17.204" cy="17.499" r="10.7909" stroke="#FF8B20" stroke-width="1.7037" stroke-linejoin="round"/>
-                <path d="M17.0006 11.3882L18.7992 15.1429L22.8208 15.745L19.9107 18.6676L20.5977 22.7944L17.0006 20.846L13.4035 22.7944L14.0905 18.6676L11.1804 15.745L15.2021 15.1429L17.0006 11.3882Z" stroke="#FF8B20" stroke-width="1.7037" stroke-linejoin="round"/>
-                <path d="M14.6979 2.20835C15.9333 0.852426 18.067 0.852426 19.3024 2.20835C20.1219 3.10783 21.3902 3.44767 22.5497 3.07845C24.2975 2.52188 26.1454 3.58876 26.5373 5.38071C26.7973 6.56945 27.7258 7.49791 28.9145 7.75789C30.7064 8.1498 31.7733 9.9977 31.2168 11.7455C30.8475 12.905 31.1874 14.1733 32.0869 14.9928C33.4428 16.2282 33.4428 18.362 32.0869 19.5973C31.1874 20.4168 30.8475 21.6851 31.2168 22.8446C31.7733 24.5924 30.7064 26.4403 28.9145 26.8322C27.7258 27.0922 26.7973 28.0207 26.5373 29.2094C26.1454 31.0014 24.2975 32.0683 22.5497 31.5117C21.3902 31.1425 20.1219 31.4823 19.3024 32.3818C18.067 33.7377 15.9333 33.7377 14.6979 32.3818C13.8784 31.4823 12.6101 31.1425 11.4506 31.5117C9.70277 32.0683 7.85487 31.0014 7.46297 29.2094C7.20299 28.0207 6.27452 27.0922 5.08579 26.8322C3.29384 26.4403 2.22696 24.5924 2.78353 22.8446C3.15275 21.6851 2.81291 20.4168 1.91342 19.5973C0.557504 18.362 0.557504 16.2282 1.91342 14.9928C2.81291 14.1733 3.15275 12.905 2.78353 11.7455C2.22696 9.9977 3.29384 8.1498 5.08579 7.75789C6.27452 7.49791 7.20299 6.56945 7.46297 5.38071C7.85487 3.58876 9.70277 2.52188 11.4506 3.07845C12.6101 3.44767 13.8784 3.10783 14.6979 2.20835Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"/>
-                <path d="M9.8418 31.7775V42.8091L17.0005 38.509L24.1591 42.8091V31.728" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>                
-            </div>
-            <span>Гарантия на качество услуг и товаров, гарантия лучшей цены</span>
-          </li>
-          <li class="advantanges__item">
-            <div class="advantages__wrapper-img">
-              <svg width="37" height="46" viewBox="0 0 37 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.70605 21.3553L16.0979 15.3911L30.4898 21.3553L16.0979 27.3194L1.70605 21.3553Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M1.70605 21.3555L1.70608 38.5093L16.0979 44.4734L16.0979 27.3196" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M30.4893 21.3555L30.4893 26.2984M16.0974 44.4734L30.4892 38.5093L30.4892 30.5225" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M23.0979 18.2959L8.70605 24.2601V29.3921" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M35.5681 23.0918C34.1984 28.0278 30.2124 31.8755 25.1973 33.0475" stroke="#FF8B20" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M7.55097 1.3855L1.25684 8.05285L7.55097 14.7202C7.82538 15.0109 8.31401 14.8167 8.31401 14.4169V10.8605H20.895C29.1313 10.8605 35.8 15.3131 35.4662 23.4436C35.866 22.1367 36.0811 20.7492 36.0811 19.3114C36.0811 11.5209 29.7657 5.20548 21.9752 5.20548H8.31401V1.68877C8.31401 1.28902 7.82538 1.09481 7.55097 1.3855Z" stroke="#FF8B20" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>                
-            </div>
-            <span>Защита покупателя 14 дней на возврат</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="page__questions questions">
-      <div class="questions__container container">
-        <div class="questions__wrapper__call">
-          <h2 class="questions__title">Есть вопросы?</h2>
-          <p class="questions__text questions__text--area">Напишите нам, и наш менеджер ответит вам в ближайшее время</p>
-        </div>
-        <div class="questions__wrapper-button">
-          <button class="questions__btn-link btn-link">
-            Задать вопрос в чате
-            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 1L13 6L8 11" stroke="white" stroke-linecap="round"/>
-              <path d="M12 6L1 6" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.79961 1.19995L17.5996 12L6.79961 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"></path>
             </svg>            
           </button>
         </div>
-        <div class="questions__wrapper-social">
-          <p class="questions__text questions__text--margin-top">или другим удобным способом</p>
-          <a href="tel:84951507761" class="questions__tel">8 (495) 150 77 61</a>
-          <div class="questions__social">
-            <a href="#" class="questions__link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <g clip-path="url(#clip0_453_2182)">
-                <path d="M11.5839 16.4696L11.5768 16.4699C11.5571 16.4705 11.5319 16.4709 11.5015 16.4707C11.4409 16.4704 11.3593 16.4676 11.2602 16.4589C11.0623 16.4415 10.7923 16.4 10.4784 16.3055C9.84595 16.1151 9.04525 15.7116 8.30919 14.878L8.30915 14.8779C7.55001 14.0181 6.86512 12.7768 6.38354 11.7969C6.13848 11.2982 5.93799 10.8504 5.79863 10.5269C5.72886 10.3649 5.6742 10.2337 5.63671 10.1422C5.61796 10.0964 5.60349 10.0606 5.59355 10.0358L5.58209 10.0071L5.57896 9.99921L5.57806 9.99693L5.57778 9.99622L5.57768 9.99596C5.57765 9.99587 5.57761 9.99578 6.27568 9.72155M11.5839 16.4696L14.6923 9.35446C14.6043 9.4123 14.5472 9.54587 14.5472 9.54587M11.5839 16.4696H12.2198C12.2491 16.4696 12.2784 16.4679 12.3075 16.4644L12.2556 16.0235C12.2556 16.0235 12.2556 16.0235 12.2556 16.0235M11.5839 16.4696L12.2556 16.0235M6.27568 9.72155C5.567 9.96705 5.56694 9.96688 5.56688 9.96671L5.56676 9.96637L5.56652 9.96566L5.56601 9.96418L5.56491 9.96094L5.56239 9.95338L5.55622 9.93402C5.5517 9.91937 5.54625 9.90074 5.54052 9.87893C5.52945 9.8368 5.51543 9.77555 5.50618 9.70338C5.49529 9.61847 5.45212 9.27147 5.68378 8.96634L5.68954 8.95875L5.68959 8.95878C5.90515 8.68223 6.21729 8.60872 6.30983 8.58808C6.38098 8.57221 6.4436 8.56399 6.48777 8.55955C6.51051 8.55726 6.53004 8.55581 6.5454 8.55489L6.56561 8.55384L6.57342 8.55353L6.57673 8.55342L6.57824 8.55338L6.57895 8.55335L6.5793 8.55334C6.57947 8.55334 6.57964 8.55333 6.60061 9.30304L6.57964 8.55333L6.59539 8.55306L8.14963 8.54223C8.19492 8.54192 8.24015 8.5457 8.28476 8.55355L8.15485 9.29221C8.28476 8.55355 8.28492 8.55358 8.28507 8.5536L8.28539 8.55366L8.28604 8.55378L8.28739 8.55402L8.29028 8.55454L8.29683 8.55576L8.3129 8.55895C8.32486 8.56142 8.33948 8.56463 8.35628 8.56871C8.38946 8.57675 8.43342 8.58871 8.48366 8.60583C8.57479 8.63688 8.72946 8.69911 8.87759 8.81838L8.40723 9.40256L8.8739 8.81543C9.02296 8.9339 9.11257 9.07489 9.15654 9.15226C9.19668 9.04378 9.24979 8.96203 9.28115 8.91689C9.38922 8.76136 9.55819 8.59575 9.76828 8.4842C10.0461 8.33612 10.3639 8.28717 10.6218 8.26505C10.8936 8.24174 11.1964 8.24209 11.4866 8.24504L11.4879 8.24505C11.9946 8.25113 12.1885 8.28814 12.4329 8.35222L12.4334 8.35236C12.7046 8.4237 12.9737 8.57534 13.1561 8.8604C13.3168 9.11156 13.3558 9.38588 13.3693 9.58538C13.3832 9.7904 13.3749 10.0265 13.3665 10.2534C13.3659 10.2719 13.3652 10.2905 13.3645 10.3093C13.363 10.3491 13.3615 10.3896 13.36 10.4309C13.4834 10.1871 13.5939 9.93126 13.6793 9.71973C13.7299 9.5942 13.7703 9.48764 13.7978 9.41315C13.8116 9.37596 13.822 9.34694 13.8289 9.32772L13.8363 9.30652L13.838 9.30186L13.8381 9.30137C13.8382 9.30134 13.8382 9.30131 13.8382 9.30128M6.27568 9.72155L5.57761 9.99578C5.57388 9.98628 5.57034 9.9767 5.567 9.96705L6.27568 9.72155ZM13.8382 9.30128C13.8382 9.30132 13.8381 9.30137 14.5472 9.54587M13.8382 9.30128C13.8441 9.28423 13.8506 9.26739 13.8576 9.25081L14.5472 9.54587M13.8382 9.30128L16.4989 8.55336M14.5472 9.54587C13.8576 9.25081 13.8577 9.25068 13.8578 9.25054L13.8579 9.25026L13.8581 9.2497L13.8586 9.24854L13.8597 9.24603L13.8622 9.24031L13.8686 9.22619C13.8735 9.21567 13.8796 9.20272 13.8871 9.18789C13.9016 9.15885 13.9226 9.11953 13.95 9.07553C13.9932 9.0061 14.099 8.84692 14.2803 8.72778L14.2865 8.72366L14.2865 8.72369C14.4811 8.59856 14.6764 8.57152 14.7797 8.56432C14.838 8.56026 14.8881 8.56121 14.9255 8.56331C14.9279 8.56344 14.9302 8.56358 14.9325 8.56372L16.4989 8.55336M9.74415 10.2166C9.74052 10.1978 9.73666 10.1807 9.73264 10.1655C9.72657 10.1425 9.72242 10.1327 9.72242 10.1327C9.72242 10.1327 9.72728 10.1442 9.73983 10.1629L9.10411 9.39636C9.10423 9.39437 9.10436 9.3924 9.10449 9.39045M9.74415 10.2166C9.69572 10.2078 9.64487 10.1937 9.59379 10.1735M9.74415 10.2166C9.75023 10.2481 9.75566 10.2842 9.76013 10.3235C9.76705 10.3846 9.77036 10.4419 9.77185 10.4842C9.77259 10.5049 9.77285 10.521 9.77293 10.5309L9.77295 10.5361C9.70987 10.4163 9.64963 10.2933 9.59379 10.1735M9.74415 10.2166C9.75213 10.2181 9.76005 10.2194 9.76788 10.2206C9.77338 10.2214 9.78182 10.2229 9.79114 10.2254C9.80078 10.2279 9.80701 10.2303 9.80953 10.2314C9.80994 10.2316 9.81014 10.2317 9.81013 10.2317C9.81005 10.2316 9.80367 10.2286 9.7933 10.2208C9.78856 10.2172 9.7828 10.2124 9.77643 10.2064L9.78673 10.1334L9.78706 10.131L9.1041 9.39644C9.09741 9.50455 9.10897 9.66366 9.20075 9.82901C9.30004 10.0079 9.4479 10.1157 9.59379 10.1735M9.59379 10.1735C9.52113 10.0176 9.4559 9.86711 9.40152 9.73634C9.35225 9.61787 9.31294 9.51814 9.28619 9.44868C9.27283 9.414 9.26266 9.387 9.25599 9.36914L9.24869 9.34944L9.24709 9.3451L9.24692 9.34462L9.24695 9.34461L9.24455 9.33818L9.10449 9.39045M9.10449 9.39045C9.1045 9.39043 9.1045 9.3904 9.1045 9.39038C9.00481 9.42763 8.83413 9.49136 8.5419 9.60044L9.10449 9.39045ZM16.4989 8.55336C16.5212 8.55135 16.5494 8.54923 16.582 8.54768C16.6532 8.54429 16.7579 8.54294 16.8746 8.55536C16.984 8.56699 17.1495 8.5951 17.3169 8.67682C17.4926 8.76264 17.7207 8.93537 17.8229 9.24587L16.4989 8.55336ZM12.2556 16.0235C12.3076 16.4644 12.3077 16.4644 12.3079 16.4644L12.3083 16.4644L12.3091 16.4643L12.3108 16.4641L12.3144 16.4636L12.3226 16.4625L12.3432 16.4595C12.3585 16.4572 12.3776 16.4539 12.3995 16.4495C12.4424 16.4409 12.5008 16.4271 12.5671 16.4051C12.6802 16.3676 12.9069 16.2774 13.0877 16.0662L13.0883 16.0656C13.2698 15.853 13.3196 15.6082 13.3366 15.506C13.3413 15.4781 13.3449 15.4517 13.3476 15.4274C13.3946 15.4853 13.441 15.5417 13.482 15.59C13.6219 15.7546 13.7997 15.949 14.0052 16.1024C14.309 16.3298 14.6025 16.4363 14.8477 16.4768C14.9682 16.4968 15.0725 16.5001 15.1557 16.4964C15.1842 16.4951 15.2102 16.493 15.2335 16.4905L16.6418 16.4695C16.6547 16.4693 16.6676 16.4688 16.6806 16.4679L16.6306 15.7196C16.6806 16.4679 16.6809 16.4679 16.6812 16.4679L16.6819 16.4678L16.6833 16.4677L16.6864 16.4675L16.6935 16.467L16.7113 16.4654C16.7248 16.4641 16.7415 16.4622 16.761 16.4597C16.7994 16.4546 16.8508 16.4463 16.91 16.4328C17.019 16.4081 17.1978 16.3563 17.3736 16.2423C17.5581 16.1228 17.7795 15.9058 17.8536 15.5593C17.9235 15.2324 17.8328 14.9256 17.6967 14.6735C17.722 14.7195 17.6394 14.5639 17.6249 14.5382C17.5777 14.4547 17.5117 14.3476 17.4186 14.2157C17.2331 13.9529 16.9422 13.5945 16.4827 13.1305L16.4827 13.1305C16.3123 12.9584 16.2086 12.8527 16.1425 12.7784C16.1654 12.7405 16.1971 12.6905 16.2407 12.6259C16.3181 12.5113 16.3977 12.3995 16.4935 12.2649C16.5964 12.1203 16.718 11.9495 16.8757 11.7206L12.2556 16.0235ZM17.6466 10.4357C17.4809 10.792 17.22 11.2219 16.8759 11.7204L17.6466 10.4357ZM17.6466 10.4357C17.7294 10.2578 17.7989 10.076 17.8387 9.89804M17.6466 10.4357L17.8387 9.89804M17.8387 9.89804C17.8758 9.73165 17.9043 9.49331 17.823 9.24612L17.8387 9.89804ZM12.8531 14.8591C12.853 14.8589 12.8551 14.8602 12.8595 14.8634C12.8553 14.8608 12.8531 14.8592 12.8531 14.8591ZM12.5986 11.6205C12.5986 11.6204 12.6001 11.6192 12.6031 11.617C12.6001 11.6195 12.5986 11.6206 12.5986 11.6205ZM13.435 14.7486C13.436 14.7466 13.4366 14.7457 13.4366 14.7457C13.4366 14.7458 13.4361 14.7468 13.435 14.7486Z" stroke="#3A3A3A" stroke-width="1.5" stroke-linejoin="round"/>
-                <rect x="1.59961" y="1.6001" width="20.8" height="20.8" rx="10.4" stroke="#3A3A3A" stroke-width="1.5" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_453_2182">
-                <rect width="24" height="24" fill="white"/>
-                </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="#" class="questions__link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <g clip-path="url(#clip0_453_16406)">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.3985 11.9996C22.3985 17.7488 17.7488 22.3985 11.9996 22.3985C6.25872 22.3985 1.60059 17.7488 1.60059 11.9996C1.60059 6.25872 6.25872 1.60059 11.9996 1.60059C17.7488 1.60059 22.3985 6.25872 22.3985 11.9996Z" stroke="#3A3A3A" stroke-width="1.5" stroke-linejoin="round"/>
-                  <path d="M17.5916 13.9736C17.5916 15.1942 16.6047 16.181 15.3842 16.181H8.62343C7.40286 16.181 6.41602 15.1942 6.41602 13.9736V10.0349C6.41602 8.81435 7.40286 7.81885 8.62343 7.81885H15.3842C16.6047 7.81885 17.5916 8.81435 17.5916 10.0349V13.9736Z" stroke="#3A3A3A" stroke-width="1.5" stroke-linejoin="round"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7354 10.0518L14.12 11.9995L10.7354 13.9558V10.0518Z" stroke="#3A3A3A" stroke-width="1.5" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_453_16406">
-                    <rect width="24" height="24" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="#" class="questions__link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12.1677 2.23535C9.54083 2.23535 7.15876 3.3012 5.4313 5.02726C3.70804 6.75331 2.6352 9.13818 2.6352 11.7608C2.6352 12.6379 2.75689 13.4995 2.98489 14.3136C3.20169 15.0857 3.50802 15.82 3.89687 16.497L2.32747 21.1604C2.24914 21.3996 2.37923 21.6598 2.61842 21.7423C2.71213 21.7745 2.81424 21.7703 2.90516 21.7423L7.73784 20.1939C8.37847 20.531 9.06665 20.7996 9.78701 20.9842C10.5493 21.1814 11.348 21.2877 12.1663 21.2877C14.7931 21.2877 17.1766 20.2219 18.9027 18.4958L18.9111 18.4874C20.6343 16.7656 21.696 14.3877 21.696 11.7636C21.696 9.13679 20.6315 6.75331 18.9041 5.02726C17.1822 3.30539 14.7987 2.23535 12.1677 2.23535Z" stroke="#3A3A3A" stroke-width="1.5" stroke-linejoin="round"/>
-                <path d="M9.00472 6.91214C9.26873 6.92757 9.39902 6.94129 9.57217 7.35616L9.56875 7.35788C9.78475 7.88419 10.3059 9.16482 10.3728 9.29511C10.4414 9.43054 10.4996 9.60884 10.4122 9.78199C10.3248 9.95343 10.2528 10.0357 10.1225 10.19C9.99391 10.3443 9.8739 10.4592 9.73847 10.6237C9.61846 10.7626 9.48303 10.922 9.63218 11.1826C9.78133 11.4432 10.3076 12.3004 11.0825 12.9896C12.0803 13.8759 12.8946 14.1605 13.1843 14.2856C13.4003 14.3765 13.6558 14.3525 13.8152 14.1845C14.0227 13.9668 14.2627 13.605 14.5181 13.2536C14.7016 13.005 14.9244 12.9741 15.1644 13.0616C15.4044 13.1473 16.6868 13.7816 16.9474 13.9102C17.2114 14.0405 17.3845 14.1073 17.448 14.2136C17.5097 14.3216 17.5097 14.8462 17.2937 15.4531C17.0828 16.0651 16.2188 16.5674 15.5399 16.7166C15.0684 16.816 14.4598 16.8932 12.4026 16.0411C9.76933 14.9474 8.07382 12.2712 7.94353 12.0981C7.81324 11.9249 6.87891 10.682 6.87891 9.39969C6.87891 8.1122 7.5338 7.48474 7.79438 7.22073C8.00525 7.003 8.36183 6.90186 8.70471 6.90186C8.81271 6.90186 8.91214 6.907 9.00472 6.91214Z" stroke="#3A3A3A" stroke-width="1.5" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <a href="#" class="questions__link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M18.8649 20.1068L22.07 3.51835C22.07 2.41319 20.9154 2.96482 20.9154 2.96482L2.59659 10.3293C2.59659 10.3293 1.74495 10.6285 1.8124 11.1806C1.87985 11.7327 2.5741 11.9857 2.5741 11.9857L7.21178 13.8931L18.2303 7.176C17.894 7.49822 9.52809 15.2764 9.52809 15.2764L9.22081 19.9203C9.47082 20.032 9.69924 19.8538 9.69924 19.8538L12.6247 17.1163L17.1841 20.7051C18.417 21.2563 18.8649 20.1068 18.8649 20.1068Z" stroke="#3A3A3A" stroke-width="1.5" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="page__articeles articles">
-      <div class="articles__container container">
-        <h2 class="articles__title">Полезные статьи и обзоры</h2>
-        <ul class="articles__list">
-          <li class="articles__item">
-            <article class="articles__article article">
-              <img src="./assets/img/article1.jpg" alt="Первая статья" class="article__img" width="330" height="200">
-              <h3 class="article__title">Лучшее ортопедическое кресло для работы за компьютером</h3>
-              <p class="article__text">Существуют три основополагающих критерия выбора ортопедического кресла для работы за компьютером. Рассмотрим каждый из них.</p>
-            </article>
-        </li>
-          <li class="articles__item">
-            <article class="articles__article article">
-              <img src="./assets/img/article2.jpg" alt="Первая статья" class="article__img" width="330" height="200">
-              <h3 class="article__title">Выбираем кресло руководителя из натуральной кожи</h3>
-              <p class="article__text">Сложно представить красивый кабинет руководителя без мегаудобного кресла, изделия, способное оказать влияние на качество труда.</p>
-            </article>
-          </li>
-          <li class="articles__item">
-            <article class="articles__article article">
-              <img src="./assets/img/article3.jpg" alt="Первая статья" class="article__img" width="330" height="200">
-              <h3 class="article__title">Самое удобное офисное кресло для работы за компьютером</h3>
-              <p class="article__text">СГде, как не в офисе, следует устанавливать самое комфортное кресло? Ведь для продуктивного дня так необходима удобная мебель.</p>
-            </article>
-          </li>
-        </ul>
-        <a href="#" class="articles__link">смотреть все проекты</a>
-      </div>
-    </section>
-    <section class="page__about about">
-      <div class="about__container container">
-        <h2 class="about__title">ERGO-STORE магазин удобных эргономичных кресел</h2>
-        <p>Мы предлагаем не просто купить удобное кресло, а возможность избавиться от болезненных ощущений, исправить осанку, обеспечить комфорт во время работы или отдыха. У нас вы найдете эргономичные кресла высокого качества, которые разрабатывались совместно с ортопедами, имеют необходимые сертификаты качества, подтверждающие соответствие заявленным характеристикам. Наша продукция поможет сохранить здоровье позвоночника, предупредить различные заболевания и устранить болезненные ощущения из-за длительного и неправильного сидения. В своей работе мы стремимся ответственно подойти к решению задач каждого клиента и обеспечить высокий уровень сервиса.</p>
-        <p>Группа компаний эргономичной мебели ERGO-STORE поможет создать комфортные условия в офисе и дома. Не экономьте на здоровье, позвольте себе ровную осанку и крепкую спину.</p>
-        <p>При покупке эргономичного кресла важно выбрать именно оригинальную продукцию, которая имеет все необходимые характеристики. Поэтому приобретать её рекомендуется только у проверенных продавцов, таких как ERGO-STORE — проверенный магазин эргономичных кресел. В отличие от обычных магазинов мы несем ответственность за предоставленную информацию и рассказываем только о реальных фактах.</p>
-      </div>
-      <div class="about__wrapper-container container">
-        <ul class="about__brands-list">
-          <li class="about__brands-item">
-            <img src="./assets/img/brand1.jpg" alt="Бренд1" class="about__brands-img" width="100" height="100">
-          </li>
-          <li class="about__brands-item">
-            <img src="./assets/img/brand2.jpg" alt="Бренд1" class="about__brands-img" width="100" height="100">
-          </li>
-          <li class="about__brands-item">
-            <img src="./assets/img/brand3.jpg" alt="Бренд1" class="about__brands-img" width="100" height="100">
-          </li>
-          <li class="about__brands-item">
-            <img src="./assets/img/brand4.jpg" alt="Бренд1" class="about__brands-img" width="100" height="100">
-          </li>
-          <li class="about__brands-item">
-            <img src="./assets/img/brand5.jpg" alt="Бренд1" class="about__brands-img" width="100" height="100">
-          </li>
-          <li class="about__brands-item">
-            <img src="./assets/img/brand6.jpg" alt="Бренд1" class="about__brands-img" width="100" height="100">
-          </li>
-          <li class="about__brands-item">
-            <img src="./assets/img/brand7.jpg" alt="Бренд1" class="about__brands-img" width="100" height="100">
-          </li>
-        </ul>
       </div>
     </section>
     <section class="page__form form">
@@ -2410,5 +1668,6 @@
     <script src="/assets/js/swiper.min.js"></script>
     <script src="/assets/js/slider.js"></script>
     <script src="/assets/js/main.js" type="module"></script>
+    <script src="/assets/js/category.js" type="module"></script>
   </body>
 </html>

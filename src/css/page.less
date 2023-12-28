@@ -22,8 +22,15 @@
   }
 }
 
-section.page__products--first {
+section.page__products--first,
+section.page__product--first {
   @media (min-width: @t-width) {
     padding-top: 0;
   }
+}
+
+.page-related,
+.page__gallery {
+  padding-top: var(--sectionPT);
+  padding-bottom: var(--sectionPB);
 }

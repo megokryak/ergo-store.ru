@@ -1,5 +1,5 @@
 .settings__all-settings {
-  padding: 8px 15px;
+  padding: 9px 15px;
   border: 1px solid @colorDopGray;
   border-radius: 4px;
   display: flex;
@@ -16,7 +16,10 @@
 .settings__change-complitation,
 .settings__change-material,
 .settings__change-peculiarities {
+  display: none;
+
   @media (min-width: @t-width) {
+    display: block;
     box-sizing: border-box;
     padding: 14px 24px;
     display: flex;
@@ -31,6 +34,13 @@
 
 .settings__change-color {
   cursor: auto;
+  
+
+  @media (min-width: @d-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .settings__color-title,
@@ -42,17 +52,63 @@
   line-height: 170%;
   letter-spacing: 0.14px;
   box-sizing: border-box;
+
+  @media (min-width: @d-width) {
+    font-size: 16px;
+  }
+}
+
+.settings__color-title {
+  @media (min-width: @d-width) {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.settings__more-color {
+  @media (min-width: @d-width) {
+    color: @colorDarkGray;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.14px;
+  }
 }
 
 .settings__wrapper-color {
   display: flex;
   column-gap: 14px;
+
+  @media (min-width: @d-width) {
+    order: 3;
+    margin-left: auto;
+  }
+}
+
+.settings__wrapper-color span {
+  @media (min-width: @d-width) {
+    display: none;
+  }
 }
 
 .settings__choose-color-list {
   display: none;
-  @media (min-width: @t-width) {
-    
+
+  @media (min-width: @d-width) {
+    display: flex;
+    gap: 16px;
+    order: 2;
+  }
+}
+
+.settings__choose-color-item {
+  @media (min-width: @d-width) {
+    display: flex;
+  }
+}
+
+.settings__choose-color-text {
+  @media (min-width: @d-width) {
+    display: none;
   }
 }
 
@@ -86,6 +142,12 @@
 
 .settings__img {
   display: none;
+
+  @media (min-width: @d-width) {
+    display: block;
+    width: 54px;
+    height: 54px;
+  }
 }
 
 .settings__wrapper-complitation,
@@ -95,6 +157,12 @@
     display: flex;
     flex-direction: column;
     width: 188px;
+  }
+}
+.settings__wrapper-peculiarities {
+
+  @media (min-width: @d-width) {
+    width: 234px;
   }
 }
 

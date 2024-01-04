@@ -57,6 +57,10 @@
   }
 }
 
+.section-description--additional .section-description__text {
+  margin-top: 0;
+}
+
 .section-description__wrapper-top-text {
   @media (min-width: @t-width) {
     width: 62%;
@@ -76,6 +80,10 @@
   }
 }
 
+.section-description__wrapper-top-img img {
+  width: 300px;
+}
+
 .section-description__text h2 {
   color: @colorBlack;
   font-size: 24px;
@@ -85,6 +93,15 @@
   @media (min-width: @t-width) {
     width: 100%;
   }
+
+  @media (min-width: @d-width) {
+    font-size: 28px;
+  }
+}
+
+.section-description--additional .section-description__text h2 {
+  font-size: 28px;
+  line-height: 140%;
 }
 
 .section-description__text p {
@@ -92,29 +109,59 @@
   color: @colorDarkGray;
   font-size: 14px;
   line-height: 160%;
+
+  @media (min-width: @d-width) {
+    font-size: 16px;
+    line-height: 170%;
+  }
+}
+
+.section-description--additional .section-description__text p {
+  margin-top: 30px;
 }
 
 .section-description__text h3 {
-  margin-top: 40px;
+  margin-top: 30px;
   color: @colorBlack;
   font-size: 18px;
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.18px;
+
   @media (min-width: @t-width) {
     width: 100%;
   }
+
+  @media (min-width: @d-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+.section-description--additional .section-description__text h3 {
+  margin-top: 28px;
+}
+
+.section-description--additional .section-description__text ul {
+  list-style-type: disc;
+  padding-left: 21px;
 }
 
 .section-description__text ol {
-  margin-top: 16px;
-  padding-left: 15px;
+  margin-top: 18px;
+  padding-left: 19px;
 }
 
 .section-description__text li {
   color: @colorDarkGray;
   font-size: 14px;
-  line-height: 160%;
+  line-height: 158%;
+
+  @media (min-width: @d-width) {
+    font-size: 16px;
+    line-height: 170%;
+    margin-top: 20px;
+  }
 }
 
 .section-description__wrapper-bottom-img {
@@ -125,6 +172,14 @@
 
   @media (min-width: @t-width) {
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.section-description__wrapper-bottom-img img {
+  width: 300px;
+  @media (min-width: @d-width) {
+    width: 427px;
   }
 }
 

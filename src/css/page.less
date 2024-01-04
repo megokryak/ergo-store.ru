@@ -34,3 +34,9 @@ section.page__product--first {
   padding-top: var(--sectionPT);
   padding-bottom: var(--sectionPB);
 }
+
+.page__category .page__advantages .advantages__list {
+  @media (min-width: @d-width) {
+    grid-template-columns: repeat(3,1fr)
+  }
+}

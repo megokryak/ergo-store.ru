@@ -38,7 +38,7 @@
 .form__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 38px;
 
   @media (min-width: @t-width) {
     flex-direction: row;
@@ -47,6 +47,14 @@
     align-items: center;
     column-gap: none;
     row-gap: 50px;
+  }
+}
+
+.form__label-checkbox {
+  margin-top: -5px;
+  
+  @media (min-width: @t-width) {
+    margin-top: 0;
   }
 }
 
@@ -60,6 +68,7 @@
 .form__message {
   border: none;
   border-bottom: 1px solid @colorLightGray;
+  padding-bottom: 15px;
   background-color: transparent;
   width: 100%;
   font-size: 16px;
@@ -130,8 +139,8 @@
 .form__submit {
   border: 1px solid @colorLightGray;
   border-radius: 6px;
-  margin-top: 24px;
   transition: 0.3s;
+  margin-top: -15px;
 
   @media (min-width: @t-width) {
     margin-top: 0;

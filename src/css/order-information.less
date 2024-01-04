@@ -13,6 +13,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: @d-width) {
+    flex-direction: column;
+  }
 }
 
 .order-information__date-item {
@@ -22,6 +26,10 @@
 
   @media (min-width: @t-width) {
     width: calc(50% - 30px);
+  }
+
+  @media (min-width: @d-width) {
+    width: 100%;
   }
 }
 
@@ -36,6 +44,11 @@
     padding-left: 30px;
     position: relative;
   }
+
+  @media (min-width: @d-width) {
+    padding-left: 0;
+    border-top: 1px solid @colorDopGray;
+  }
 }
 
 .order-information__date-item:not(:first-child)::before {
@@ -47,6 +60,10 @@
     position: absolute;
     left: 0;
     top: calc(50% - 10px);
+  }
+
+  @media (min-width: @d-width) {
+    display: none;
   }
 }
 
@@ -83,11 +100,20 @@
 }
 
 .order-information__pay-list {
+  display: flex;
   margin-top: 4px;
+  flex-direction: column;
+  row-gap: 3px;
 
   @media (min-width: @t-width) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    row-gap: 0;
+  }
+
+  @media (min-width: @d-width) {
+    flex-direction: column;
+    gap: 2px;
   }
 }
 
@@ -111,18 +137,29 @@
 }
 
 .orider-information__delivery-list {
+  margin-top: 10px;
+
   @media (min-width: @t-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @d-width) {
+    flex-direction: column;
   }
 }
 
 .orider-information__delivery-item {
   display: flex;
+  column-gap: 13px;
   padding: 16px 0;
 
   @media (min-width: @t-width) {
     width: calc(50% - 30px);
+  }
+
+  @media (min-width: @d-width) {
+    width: 100%;
   }
 }
 
@@ -131,6 +168,11 @@
     border-top: none;
     padding-left: 30px;
     position: relative;
+  }
+
+  @media (min-width: @d-width) {
+    padding-left: 0;
+    border-top: 1px solid @colorDopGray;
   }
 }
 
@@ -143,6 +185,10 @@
     position: absolute;
     left: 0;
     top: calc(50% - 20px);
+  }
+
+  @media (min-width: @d-width) {
+    display: none;
   }
 }
 

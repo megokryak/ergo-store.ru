@@ -3,9 +3,11 @@
   overflow-x: hidden;
   box-sizing: border-box;
   flex-direction: row;
+  column-gap: 15px;
 
   @media (min-width: @t-width) {
     justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -15,8 +17,9 @@
 
 .page__category .category {
   flex-direction: column;
+  align-items: center;
   overflow-x: auto;
-  gap: 16px;
+  gap: 15px;
 
   @media (min-width: @dop-width) {
     display: grid;
@@ -26,6 +29,7 @@
   @media (min-width: @t-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    width: auto;
   }
 
   
@@ -40,12 +44,16 @@
 .category__item {
   border: 1px solid @colorDopGray;
   border-radius: 6px;
-  min-width: 100%;
+  min-width: 95%;
   
   @media (min-width: @t-width) {
     max-width: 33%;
     min-width: auto;
   }
+}
+
+.page__products .category__item {
+  width: 95%;
 }
 
 .page__category .category__item  {

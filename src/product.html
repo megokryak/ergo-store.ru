@@ -6,7 +6,7 @@
     <title>ERGO-STORE</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
-  <body class="page page__category">
+  <body class="page page__category page__product">
     <header class="page__header header">
       <div class="header__wrapper-top-menu">
         <div class="header__container-top container">
@@ -404,23 +404,23 @@
             <ul class="settings__choose-color-list">
               <li class="settings__choose-color-item">
                 <span class="settings__choose-color" style="background-color: #3A3A3A;"></span>
-                <span>Черный</span>
+                <span class="settings__choose-color-text">Черный</span>
               </li>
               <li class="settings__choose-color-item">
                 <span class="settings__choose-color" style="background-color: #A0A0A0;"></span>
-                <span>Серый</span>
+                <span class="settings__choose-color-text">Серый</span>
               </li>
               <li class="settings__choose-color-item">
                 <span class="settings__choose-color" style="background-color: white; border: 1px solid #B3B3B3;"></span>
-                <span>Белый</span>
+                <span class="settings__choose-color-text">Белый</span>
               </li>
               <li class="settings__choose-color-item">
                 <span class="settings__choose-color" style="background-color: #835D3A;"></span>
-                <span>Коричневый</span>
+                <span class="settings__choose-color-text">Коричневый</span>
               </li>
               <li class="settings__choose-color-item">
                 <span class="settings__choose-color"></span>
-                <span>Оранжевый</span>
+                <span class="settings__choose-color-text">Оранжевый</span>
               </li>
             </ul>
           </div>
@@ -550,59 +550,61 @@
             <li class="tags__item"><span class="tags__name">офисное</span></li>
           </ul>
         </div>
-        <div class="product__wrapper-price-and-pay">
-          <b>42 300 ₽</b>
-          <span>Цена без скидки 50 590 ₽ </span>
-          <form action="#" method="post" class="product__form">
-            <button class="product__add-to-card" type="button">
-              <span>Добавить в корзину</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M15.16 13.5101H7.26919C6.55583 13.5101 5.97754 12.9202 5.97754 12.1924C5.97754 11.4646 6.55583 10.8746 7.26919 10.8746H14.7702C15.3993 10.8746 15.939 10.4169 16.0539 9.78592L16.9325 4.96094" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6.88381 10.6953L4.33564 2.59637C4.0349 1.6405 3.16351 0.992188 2.17949 0.992188H0.996094" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                <ellipse cx="8.24174" cy="16.0081" rx="0.905802" ry="0.924104" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                <ellipse cx="13.6783" cy="16.0081" rx="0.905802" ry="0.924104" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.6072 4.48279H13.4005V5.43924H11.6072V7.23258H10.6508V5.43924H8.85742V4.48279H10.6508V2.68945H11.6072V4.48279Z" fill="#3A3A3A"/>
-              </svg>
-            </button>
-            <button class="product__submit" type="submit">Купить в 1 клик</button>
-          </form>
-        </div>
-        <div class="product__equipment">
-          <p>Выбранная комплектация</p>
-          <ul>
-            <li>чёрный каркас</li>
-            <li>синий</li>
-          </ul>
-        </div>
-        <div class="product__order-information order-information">
-          <ul class="order-information__date-list">
-            <li class="order-information__date-item">
-              <p class="order-information__text-title order-information__text-title--active">Под заказ</p>
-              <p class="order-information__text-description">25 ноября</p>
-            </li>
-            <li class="order-information__date-item">
-              <p class="order-information__text-title">В шоуруме</p>
-              <p class="order-information__text-description">2 штуки</p>
-            </li>
-          </ul>
-          <div class="order-information__wrapper-pay">
-            <span>Оплата</span>
-            <ul class="order-information__pay-list">
-              <li class="order-information__pay-item">онлайн на сайте</li>
-              <li class="order-information__pay-item">при получении </li>
-              <li class="order-information__pay-item">в рассрочку</li>
+        <div class="product__wrapper-pay-inforamtion">
+          <div class="product__wrapper-price-and-pay">
+            <b>42 300 ₽</b>
+            <span>Цена без скидки 50 590 ₽ </span>
+            <form action="#" method="post" class="product__form">
+              <button class="product__add-to-card" type="button">
+                <span>Добавить в корзину</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M15.16 13.5101H7.26919C6.55583 13.5101 5.97754 12.9202 5.97754 12.1924C5.97754 11.4646 6.55583 10.8746 7.26919 10.8746H14.7702C15.3993 10.8746 15.939 10.4169 16.0539 9.78592L16.9325 4.96094" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.88381 10.6953L4.33564 2.59637C4.0349 1.6405 3.16351 0.992188 2.17949 0.992188H0.996094" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  <ellipse cx="8.24174" cy="16.0081" rx="0.905802" ry="0.924104" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  <ellipse cx="13.6783" cy="16.0081" rx="0.905802" ry="0.924104" stroke="#3A3A3A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.6072 4.48279H13.4005V5.43924H11.6072V7.23258H10.6508V5.43924H8.85742V4.48279H10.6508V2.68945H11.6072V4.48279Z" fill="#3A3A3A"/>
+                </svg>
+              </button>
+              <button class="product__submit" type="submit">Купить в 1 клик</button>
+            </form>
+          </div>
+          <div class="product__equipment">
+            <p>Выбранная комплектация</p>
+            <ul>
+              <li>чёрный каркас</li>
+              <li>синий</li>
             </ul>
           </div>
-          <ul class="orider-information__delivery-list">
-            <li class="orider-information__delivery-item">
-              <p class="order-information__text-title">Доставка<br/>до двери</p>
-              <p class="order-information__text-description">2-3 дня<br/>Бесплатно</p>
-            </li>
-            <li class="orider-information__delivery-item">
-              <p class="order-information__text-title">Самовывоз<br/>из шоурума</p>
-              <p class="order-information__text-description">1 день<br/>Бесплатно</p>
-            </li>
-          </ul>
+          <div class="product__order-information order-information">
+            <ul class="order-information__date-list">
+              <li class="order-information__date-item">
+                <p class="order-information__text-title order-information__text-title--active">Под заказ</p>
+                <p class="order-information__text-description">25 ноября</p>
+              </li>
+              <li class="order-information__date-item">
+                <p class="order-information__text-title">В шоуруме</p>
+                <p class="order-information__text-description">2 штуки</p>
+              </li>
+            </ul>
+            <div class="order-information__wrapper-pay">
+              <span>Оплата</span>
+              <ul class="order-information__pay-list">
+                <li class="order-information__pay-item">онлайн на сайте</li>
+                <li class="order-information__pay-item">при получении </li>
+                <li class="order-information__pay-item">в рассрочку</li>
+              </ul>
+            </div>
+            <ul class="orider-information__delivery-list">
+              <li class="orider-information__delivery-item">
+                <p class="order-information__text-title">Доставка<br/>до двери</p>
+                <p class="order-information__text-description">2-3 дня<br/>Бесплатно</p>
+              </li>
+              <li class="orider-information__delivery-item">
+                <p class="order-information__text-title">Самовывоз<br/>из шоурума</p>
+                <p class="order-information__text-description">1 день<br/>Бесплатно</p>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="product__characteristics characteristics">
           <ul class="characteristics__list">
@@ -629,11 +631,10 @@
     </section>
     <section class="page__advantages advantages">
       <div class="advantages__container container">
-        <h2 class="advantages__title">Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantanges__item">
             <div class="advantages__wrapper-img">
-              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 42px;">
                 <path d="M14.9308 21.882L11.2158 25.6788C8.8915 25.1877 6.37308 25.8447 4.56799 27.6498C1.72994 30.4879 1.72994 35.0893 4.56799 37.9273C7.40604 40.7654 12.0074 40.7654 14.8455 37.9273C16.6506 36.1222 17.3076 33.6038 16.8165 31.2795L21.6929 26.5573M26.3787 21.7729L29.6237 18.4717C31.9274 19.9956 34.5152 20.6118 36.8781 18.2489C40.5576 14.5693 40.6656 10.4727 40.1243 8.69973L35.9359 12.8882C35.3574 13.4666 34.4196 13.4667 33.8411 12.8882L29.6072 8.65425C29.0287 8.0758 29.0287 7.13794 29.6072 6.55949L33.7956 2.37103C32.0227 1.82973 27.926 1.93775 24.2465 5.61725C21.8835 7.98021 22.4997 10.568 24.0237 12.8717L21.6929 15.2025" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M6.90682 29.9884L10.7321 28.9634L13.5324 31.7637L12.5074 35.589L8.68215 36.614L5.88184 33.8137L6.90682 29.9884Z" stroke="#FF8B20" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M18.8598 21.298L7.50928 9.94747L5.40802 10.0519L1.63672 4.18588L3.98813 1.83447L9.8542 5.60578L9.74973 7.70688L21.1004 19.0575M26.1062 26.3039L34.938 35.1358M21.9578 18.2C22.5362 17.6216 23.4741 17.6215 24.0525 18.2L24.4593 18.6067C24.7753 18.9228 24.9187 19.346 24.8894 19.7594C24.8542 20.256 24.8469 20.8257 25.1989 21.1777L26.409 22.3878C26.7019 22.6808 27.1472 22.7348 27.56 22.6999C28.1197 22.6526 28.6956 22.8431 29.1239 23.2713L38.7158 32.8633C40.3865 34.534 40.3865 37.2428 38.7158 38.9135C37.0452 40.5841 34.3364 40.5841 32.6657 38.9134L23.0737 29.3215C22.6455 28.8933 22.455 28.3173 22.5023 27.7576C22.5372 27.3448 22.4831 26.8995 22.1902 26.6066L20.9802 25.3965C20.6281 25.0445 20.0584 25.0519 19.5618 25.087C19.1484 25.1163 18.7251 24.973 18.409 24.657L18.0023 24.2502C17.4238 23.6718 17.4239 22.7339 18.0023 22.1555L21.9578 18.2Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -643,7 +644,7 @@
           </li>
           <li class="advantanges__item">
             <div class="advantages__wrapper-img">
-              <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 36px;">
                 <path d="M22.6445 25.2382C22.6445 23.1165 24.3645 21.3965 26.4863 21.3965H33.2181C33.9967 21.3965 34.6279 22.0277 34.6279 22.8063V27.6701C34.6279 28.4488 33.9967 29.08 33.2181 29.08H26.4863C24.3645 29.08 22.6445 27.36 22.6445 25.2382Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"></path>
                 <circle cx="26.4865" cy="25.238" r="1.12814" fill="#D7D7D7"></circle>
                 <path d="M13.5513 3.77393H9.201C8.81169 3.77393 8.49609 4.08952 8.49609 4.47883V14.0656" stroke="#D7D7D7" stroke-width="1.7037" stroke-linejoin="round"></path>
@@ -657,7 +658,7 @@
           </li>
           <li class="advantanges__item">
             <div class="advantages__wrapper-img">
-              <svg width="37" height="46" viewBox="0 0 37 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="37" height="46" viewBox="0 0 37 46" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 37px;">
                 <path d="M1.70605 21.3553L16.0979 15.3911L30.4898 21.3553L16.0979 27.3194L1.70605 21.3553Z" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M1.70605 21.3555L1.70608 38.5093L16.0979 44.4734L16.0979 27.3196" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M30.4893 21.3555L30.4893 26.2984M16.0974 44.4734L30.4892 38.5093L30.4892 30.5225" stroke="#D7D7D7" stroke-width="1.7037" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -699,13 +700,14 @@
         <div class="section-description__text">
           <div class="section-description__wrapper-top-text">
             <h2>Эргономичное офисное кресло Falto Promax</h2>
-            <p>Известный производитель — корейская компания Falto презентовала своим потенциальным покупателям оригинальное кресло. Модель изделия представлена в нескольких цветах. Компании удалось не только предложить оригинальный дизайн, но и презентовать довольно нестандартный внешний вид кресла. С точки зрения эргономики и функциональности, Falto Promax является прекрасным образцом.</p>
+            <p>Известный производитель — корейская компания Falto презентовала своим потенциальным покупателям оригинальное кресло. </p>
+            <p>Модель изделия представлена в нескольких цветах. Компании удалось не только предложить оригинальный дизайн, но и презентовать довольно нестандартный внешний вид кресла. С точки зрения эргономики и функциональности, Falto Promax является прекрасным образцом.</p>
             <h3>Преимущества изделия:</h3>
             <ol>
               <li>Универсальность. Модель кресла выглядит презентабельно, поэтому она найдет себе место в различных помещениях, где, например, преобладает стиль хай-тек, минимализм, экостиль. Благодаря индивидуальным особенностям, кресло Promax подойдет людям разного возраста и пола. 
               </li>
               <li>Комфорт. Говоря о комфорте, нужно акцентировать внимание на прочности и функциональности механизмов. Эргономичное кресло удобное, и это факт. В нем очень легко изменять положения каждого отдельного элемента. Хотите сдвинуть подголовник или приподнять сидение, а, возможно, изменить высоту подлокотников, немного отклонить спинку. Все это можно сделать, поскольку газпатрон SAMHONGSA надежно фиксирует нужную высоту сидения, синхромеханизм DONATI позволяет регулировать глубину посадки, 3D-подлокотники легко выдвигаются.</li>
-              <li>Материал-основа. Спинка кресла выполнена из суперпрочной сетки, которая обеспечивает необходимую терморегуляцию. Все ткани являются прочными, что обеспечивает надежность в процессе эксплуатации, а также гарантию сохранения презентабельного внешнего вида долгое время.</li>
+              <li>Материал-основа. Спинка кресла выполнена из суперпрочной сетки, которая обеспечивает необходимую терморегуляцию. Все ткани являются прочными, что обеспечивает надежность в процессе эксплуатации,<br> а также гарантию сохранения презентабельного внешнего вида долгое время.</li>
             </ol> 
           </div>      
           <div class="section-description__wrapper-top-img">
@@ -729,6 +731,10 @@
             <img src="/assets/img/des5.jpg" alt="photo5">
           </div>
         </div>
+      </div>
+    </section>
+    <section class="product__section-description section-description section-description--additional">
+      <div class="section-description__container container">
         <div class="section-description__text">
           <h2>Эргономичные кресла и стулья от компании ERGO-STORE</h2>
           <p>Группа компаний эргономичной мебели ERGO-STORE предлагает купить кресла руководителя в любом дизайне, с расширенным функционалом, из элитных материалов изготовления. Традиционно для офисного кресла руководителя выбирается модель высшей категории, внушительных размеров и с дорогими материалами обивки. Это необходимо чтобы создать повышенный комфорт и подчеркнуть высокий статус. Согласно многочисленным отзывам, в Москве пользуются популярностью эргономичные кресла, которые позволяют занять максимально удобное и правильное положение, правильно распределить нагрузку на позвоночник.</p>

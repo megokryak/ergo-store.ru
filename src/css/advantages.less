@@ -6,13 +6,14 @@
 
 .advantages__title {
   color: @colorWhite;
+  margin-top: 7px;
 }
 
 .advantages__list {
-  margin-top: 40px;
+  margin-top: 46px;
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 38px;
 
   @media (min-width: @t-width) {
     display: grid;
@@ -21,6 +22,11 @@
     row-gap: 50px;
     margin-top: 50px;
   }
+}
+
+.page__product .advantages__list {
+  margin-top: 0;
+  gap: 41px;
 }
 
 .advantanges__item {
@@ -39,6 +45,9 @@
 
 .advantages__wrapper-img {
   min-width: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: @t-width) {
     min-width: 54px;

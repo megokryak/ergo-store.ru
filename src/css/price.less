@@ -44,12 +44,20 @@
   color: @colorWhite;
   background-color: @colorOrange;
   border-radius: 4px 0 0 4px;
+
+  @media (min-width: @t-width) {
+    padding: 8px 33px;
+  }
 }
 
 .price__total--old-price {
   margin-left: auto;
   position: relative;
   padding: 14px 24px;
+
+  @media (min-width: @t-width) {
+    padding: 8px 24px;
+  }
 }
 
 .price__total--old-price::before {
@@ -83,12 +91,20 @@
   border-radius: 0 4px 4px 0;
   background-color: @colorBlack;
   padding: 12px 8px;
+
+  @media (min-width: @t-width) {
+    padding: 6px 8px;
+  }
 }
 
 .price__quantity--add-to-card {
   background-color: @colorOrange;
   position: relative;
   padding: 12px 15px;
+
+  @media (min-width: @t-width) {
+    padding: 8px 15px;
+  }
 }
 
 .price__quantity--add-to-card::before {
@@ -151,6 +167,10 @@
   border-radius: 4px;
   background-color: transparent;
   transition: 0.3s;
+
+  @media (min-width: @t-width) {
+    padding: 7px 20px;
+  }
 
   &:hover,
   &:focus {

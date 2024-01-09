@@ -3,6 +3,11 @@
   padding-top: 10px;
   padding-bottom: 7px;
   box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    padding-top: 26px;
+    padding-bottom: 21px;
+  }
 }
 
 .breadcrumbs__container {
@@ -54,4 +59,10 @@
   align-items: center;
   color: @colorBlack;
   font-size: 12px;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.14px;
+  }
 }

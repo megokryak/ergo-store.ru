@@ -54,12 +54,16 @@
 
 .page__products .category__item {
   width: 95%;
+
+  @media (min-width: @t-width) {
+    width: 305px;
+  }
 }
 
 .page__category .category__item  {
   @media (min-width: @t-width) {
     min-width: auto;
     max-width: none;
-    width: 100%;
+    width: 305px;
   }
 }

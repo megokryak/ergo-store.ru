@@ -95,6 +95,8 @@ slider__wrapper-description {
   @media (min-width: @t-width) {
     order: 4;
     margin-left: auto;
+    margin-right: 25px;
+    margin-top: -3px;
     align-self: flex-start;
     display: flex;
     flex-direction: column-reverse;
@@ -115,7 +117,7 @@ slider__wrapper-description {
 
   @media (min-width: @t-width) {
     padding: 16px 40px;
-    margin-top: 72px;
+    margin-top: 69px;
   }
 
   &:hover,
@@ -188,8 +190,8 @@ a.slider__btn-link {
 
   @media (min-width: @t-width) {
     width: calc(var(--index)*32);
-    top: calc(1% - var(--index)*6);
-    left: calc(50% - var(--index) * 13);
+    top: calc(1% - var(--index)*6.5);
+    left: calc(50% - var(--index) * 10.5);
   }
 
   @media (min-width: @d-width) {
@@ -210,8 +212,9 @@ a.slider__btn-link {
   right: 0;
 
   @media (min-width: @t-width) {
-    top: 50%;
+    top: 46%;
     bottom: 0;
+    padding: 0 40px;
   }
 }
 

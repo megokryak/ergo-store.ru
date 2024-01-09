@@ -4,6 +4,13 @@
   padding-bottom: var(--sectionPB);
 }
 
+.page__product .advantages {
+  @media (min-width: @t-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 .advantages__title {
   color: @colorWhite;
   margin-top: 7px;
@@ -27,9 +34,20 @@
 .page__product .advantages__list {
   margin-top: 0;
   gap: 41px;
+
+  @media (min-width: @t-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-.advantanges__item {
+.page__product .advantages__item {
+  @media (min-width: @t-width) {
+    width: calc(33% - 20.5px);
+  }
+}
+
+.advantages__item {
   display: flex;
   gap: 24px;
   color: @colorWhite;

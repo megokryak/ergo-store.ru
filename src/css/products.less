@@ -1,10 +1,6 @@
 .products {
   padding-top: var(--sectionPT);
   padding-bottom: var(--sectionPB);
-
-  @media (min-width: @t-width) {
-    padding-bottom: 0;
-  }
 }
 
 .products__container {
@@ -43,14 +39,31 @@
   @media (min-width: @t-width) {
     margin-top: 47px;
     order: 2;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
     border-bottom: 1px solid @colorDopGray;
   }
 
   @media (min-width: @d-width) {
     width: 100%;
+    padding-bottom: 18px;
+    margin-top: 52px;
   }
 }
+
+.products__wrapper-tag-list {
+  @media (min-width: @t-width) {
+    order: 4;
+    margin-top: 38px;
+  }
+}
+
+
+.page__category .products__wrapper-tag-list {
+  @media (min-width: @d-width) {
+    margin-left: auto;
+  }
+}
+
 
 
 .products__category {
@@ -59,15 +72,24 @@
   @media (min-width: @t-width) {
     order: 4;
     margin-top: 39px;
-    border-bottom: 1px solid @colorDopGray;
-    padding-bottom: var(--sectionPB);
+    // border-bottom: 1px solid @colorDopGray;
+    // padding-bottom: var(--sectionPB);
+  }
+
+  @media (min-width: @d-width) {
+    margin-top: 19px;
+  }
+}
+
+.products products--similar .products__category {
+  @media (min-width: @t-width) {
+    border-bottom: none;
   }
 }
 
 .page__products--last .products__category {
   @media (min-width: @t-width) {
     border-bottom: none;
-    padding-bottom: 0;
   }
 }
 
@@ -81,10 +103,11 @@
 
   @media (min-width: @d-width) {
     width: 272px;
+    margin-top: 44px;
   }
 }
 
-.products__wrapper_paggination {
+.products__wrapper-paggination {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,6 +118,10 @@
     width: 277px;
     margin-left: auto;
     margin-top: 40px;
+  }
+
+  @media (min-width: @d-width) {
+    margin-top: 29px;
   }
 }
 
@@ -139,12 +166,11 @@
   }
 
   @media (min-width: @d-width) {
-    margin-left: 272px;
     width: 100%;
   }
 }
 
-.products__wrapper_paggination-number {
+.products__wrapper-paggination-number {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -160,7 +186,6 @@
 
   @media (min-width: @d-width) {
     width: 100%;
-    margin-left: 272px;
   }
 }
 
@@ -182,12 +207,7 @@
   background-color: @colorLightGray;
 }
 
-.products__wrapper_paggination--similar {
+.products__wrapper-paggination--similar {
   gap: 50px;
   justify-content: center;
-
-  @media (min-width: @d-width) {
-    width: 100%;
-    order: 10;
-  }
 }

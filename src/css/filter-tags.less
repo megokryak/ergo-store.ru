@@ -1,0 +1,58 @@
+.filter-tags {
+  display: none;
+
+  @media (min-width: @t-width) {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+}
+
+.filter-tags__list {
+  @media (min-width: @t-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.filter-tags__item {
+  @media (min-width: @t-width) {
+    padding: 2px 14px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid @colorDopGray;
+    border-radius: 20px;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+  }
+}
+
+.filter-tags__delete {
+  @media (min-width: @t-width) {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.filter-tags__delete path {
+  @media (min-width: @t-width) {
+    stroke: @colorDarkGray;
+  }
+}
+
+.filter-tags__reser {
+  @media (min-width: @t-width) {
+    color: @colorOrange;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.14px;
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+}

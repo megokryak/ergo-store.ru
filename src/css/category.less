@@ -30,14 +30,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: auto;
+    margin-top: 27px;
   }
 
-  
+  @media (min-width: @d-width) {
+    gap: 29px;
+  }
 }
 
 .products--similar .category {
   @media (min-width: @d-width) {
     grid-template-columns: repeat(4, 1fr);
+    border-bottom: none;
   }
 }
 
@@ -58,6 +62,10 @@
   @media (min-width: @t-width) {
     width: 305px;
   }
+
+  @media (min-width: @d-width) {
+    width: 313px;
+  }
 }
 
 .page__category .category__item  {
@@ -65,5 +73,9 @@
     min-width: auto;
     max-width: none;
     width: 305px;
+  }
+
+  @media (min-width: @d-width) {
+    width: 313px;
   }
 }

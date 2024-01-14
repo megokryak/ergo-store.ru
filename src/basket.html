@@ -377,8 +377,427 @@
         </ul>
       </div>
     </section>
-    <section class="page__basket">
-      
+    <section class="page__basket basket">
+      <div class="basket__container container">
+        <div class="basket__wrapper-title">
+          <h2 class="basket__title">Корзина</h2>
+          <span class="basket__col-products">5 товаров</span>
+        </div>
+        <div class="basket__copy-link">
+          <div class="basket__wrapper-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M14.7319 11.5612L16.6967 9.59644C18.4344 7.85865 18.4344 5.04113 16.6967 3.30334C14.9589 1.56555 12.1413 1.56555 10.4036 3.30334L8.43883 5.26807M11.5612 14.7319L9.59644 16.6967C7.85865 18.4344 5.04113 18.4344 3.30334 16.6967C1.56555 14.9589 1.56555 12.1413 3.30334 10.4036L5.26807 8.43883M13.4439 6.5561L6.55605 13.4439" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="basket__text-link">Скопировать ссылку на корзину</span>
+        </div>
+        <div class="basket__wrapper-action">
+          <div class=" basket__wrapper-select-all basket__wrapper-select-all--selected">
+            <span class="basket__marker"></span>
+            <span class="basket__select-all">Выбрать все</span>
+          </div>
+          <button class="basket__delete-all" type="button">
+            Удалить все
+          </button>
+        </div>
+        <div class="basket__wrapper-information">
+          <ul class="basket__list">
+            <li class="basket__item">
+              <div class="basket__wrapper-img">
+                <img src="/assets/img/basket1.jpg" alt="Кресло руководителя Milani Nordic" class="basket__img" width="77" height="81">
+                <span class="basket__marker-single basket__marker-single--selected"></span>
+              </div>
+              <div class="basket__wrapper-product-title">
+                <h3 class="basket__title-product">Кресло руководителя Milani Nordic</h3>
+                <span class="basket__complectation">цвет коричневый</span>
+              </div>
+              <div class="basket__wrapper-price">
+                <b class="basket__product-price">168 680 ₽</b>
+                <span class="basket__product-old-price">189 990 ₽ </span>
+              </div>
+              <div class="basket__wrapper-product-action">
+                <button class="basket__product-like">
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                  
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <button class="basket__product-delete" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.4295 2.9001L15.7195 16.9128C15.6762 17.7679 14.9703 18.439 14.1141 18.439H5.8852C5.02903 18.439 4.32311 17.7679 4.27979 16.9128L3.56978 2.9001M12.6788 2.9001L12.4788 2.08362C12.4039 1.77785 12.1078 1.56055 11.7659 1.56055H8.23342C7.89155 1.56055 7.59538 1.77785 7.5205 2.08362L7.32054 2.9001M2.23022 2.9001H17.7691M9.99965 5.44487V15.8943M7.23473 5.44487L7.50264 15.8943M12.7651 5.44487L12.4972 15.8943" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="visually-hidden">Удалить</span>
+                </button>
+                <button class="basket__product-buy-click">Купить в 1 клик</button>
+                <div class="basket__quantity">
+                  <button class="basket__button basket__button--minus" type="button"><span>-</span></button>
+                  <label class="basket__label-total">
+                    <input type="number" class="basket__number" placeholder="1" value="1">
+                  </label>
+                  <button class="basket__button basket__button--plus" type="button"><span>+</span></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+    </section>
+    <section class="page__products products products--similar">
+      <div class="products__container container">
+        <h2 class="products__title">С этими товарами покупают</h2>
+        <ul class="products__category category">
+          <li class="category__item card">
+            <div class="card__fieldset-labels">
+              <div class="card__labes labels">
+                <span class="labels__sale">-10%</span>
+                <span class="labels__hit">Хит продаж</span>
+                <span class="labels__new">Новинка</span>
+                <!-- labels__like--nolike убирает из избранного -->
+                <svg class="labels__like" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>                        
+              </div>
+            </div>
+            <div class="card__fieldset-characteristics">
+              <a href="#" class="card__link">
+                <picture>
+                  <img src="./assets/img/milani_nordic.jpg" alt="Milani Nordic" class="card__photo" width="273" height="286">
+                </picture>
+                <b class="card__name">Milani Nordic</b>
+              </a>
+              <span class="card__status">в наличии</span>
+              <ul class="card__tags tags">
+                <li class="tags__item"><span class="tags__name">кресло руководителя</span></li>
+                <li class="tags__item"><span class="tags__name">эргономичное</span></li>
+              </ul>
+              <ul class="card__colors colors">
+                <li class="colors__item colors__item--brown colors__item--active">
+                  <span class="visually-hidden">Коричневый</span>
+                </li>
+                <li class="colors__item colors__item--gray">
+                  <span class="visually-hidden">Серый</span>
+                </li>
+                <li class="colors__item colors__item--blue">
+                  <span class="visually-hidden">Синий</span>
+                </li>
+                <li class="colors__item colors__item--black">
+                  <span class="visually-hidden">Черный</span>
+                </li>
+                <li class="colors__item colors__item--white ">
+                  <span class="visually-hidden">Белый</span>
+                </li>
+                <li class="colors__item colors__item__more-colors">
+                  <span>+4</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card__fieldset-pay">
+              <form action="#" method="post" class="card__form card__form--old-price">
+                <div class="card__price price price--old-price">
+                    <div class="price__wrapper">
+                      <button class="price__add-to-card">
+                        <span class="visually-hidden">Добавить в корзину</span>
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                        </svg>                            
+                      </button>
+                      <!-- Для старой цены добавляется класс price__total--old-price -->
+                      <div class="price__total price__total--old-price">168 680 ₽</div> 
+                      <!-- Если нажата кнопка в корзину но класс price__quantity--add-to-card удаляется. По умолчанию он есть у элмента -->
+                      <div class="price__quantity">
+                        <button class="price__add-to-card">
+                          <span class="visually-hidden">Добавить в корзину</span>
+                          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                            <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                            <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                          </svg>                            
+                        </button>
+                        <button class="price__button price__button--minus" type="button"><span>-</span></button>
+                        <label class="price__label-total">
+                          <input type="number" class="price__number" placeholder="1" value="1">
+                        </label>
+                        <button class="price__button price__button--plus" type="button"><span>+</span></button>
+                      </div>
+                    </div>
+                  <button class="price__submit" type="submit">Купить в 1 клик</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="category__item card">
+            <div class="card__fieldset-labels">
+              <div class="card__labes labels">
+                <span class="labels__sale labels__opacity">-10%</span>
+                <span class="labels__hit labels__opacity">Хит продаж</span>
+                <span class="labels__new labels__opacity">Новинка</span>
+                <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>                        
+              </div>
+            </div>
+            <div class="card__fieldset-characteristics">
+              <a href="#" class="card__link">
+                <picture>
+                  <img src="./assets/img/okamura_contessa2.jpg" alt="Milani Nordic" class="card__photo" width="273" height="286">
+                </picture>
+                <b class="card__name">Okamura Contessa 2</b>
+              </a>
+              <span class="card__status">в наличии</span>
+              <ul class="card__tags tags">
+                <li class="tags__item"><span class="tags__name">кресло руководителя</span></li>
+                <li class="tags__item"><span class="tags__name">эргономичное</span></li>
+              </ul>
+              <ul class="card__colors colors">
+                <li class="colors__item colors__item--brown colors__item--active">
+                  <span class="visually-hidden">Коричневый</span>
+                </li>
+                <li class="colors__item colors__item--gray">
+                  <span class="visually-hidden">Серый</span>
+                </li>
+                <li class="colors__item colors__item--blue">
+                  <span class="visually-hidden">Синий</span>
+                </li>
+                <li class="colors__item colors__item--black">
+                  <span class="visually-hidden">Черный</span>
+                </li>
+                <li class="colors__item colors__item--white ">
+                  <span class="visually-hidden">Белый</span>
+                </li>
+                <li class="colors__item colors__item__more-colors">
+                  <span>+4</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card__fieldset-pay">
+              <form action="#" method="post" class="card__form">
+                <div class="card__price price">
+                  <div class="price__wrapper">
+                    <button class="price__add-to-card">
+                      <span class="visually-hidden">Добавить в корзину</span>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                      </svg>                            
+                    </button>
+                    <div class="price__total">165 000 ₽</div>
+                    <div class="price__quantity price__quantity--add-to-card">
+                      <button class="price__add-to-card">
+                        <span class="visually-hidden">Добавить в корзину</span>
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                        </svg>                            
+                      </button>
+                      <button class="price__button price__button--minus" type="button"><span>-</span></button>
+                      <label class="price__label-total">
+                        <input type="number" class="price__number" placeholder="1" value="1">
+                      </label>
+                      <button class="price__button price__button--plus" type="button"><span>+</span></button>
+                    </div>
+                  </div>
+                  <button class="price__submit" type="submit">Купить в 1 клик</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="category__item card">
+            <div class="card__fieldset-labels">
+              <div class="card__labes labels">
+                <span class="labels__sale labels__opacity">-10%</span>
+                <span class="labels__hit labels__opacity">Хит продаж</span>
+                <span class="labels__new">Новинка</span>
+                <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>                        
+              </div>
+            </div>
+            <div class="card__fieldset-characteristics">
+              <a href="#" class="card__link">
+                <picture>
+                  <img src="./assets/img/okamura_legender.jpg" alt="Milani Nordic" class="card__photo" width="273" height="286">
+                </picture>
+                <b class="card__name">Okamura Legender</b>
+              </a>
+              <!-- card__status--to-order класс говорит что нет в наличии -->
+              <span class="card__status card__status--to-order">под заказ</span>
+              <ul class="card__tags tags">
+                <li class="tags__item"><span class="tags__name">кресло руководителя</span></li>
+                <li class="tags__item"><span class="tags__name">эргономичное</span></li>
+              </ul>
+              <!-- Цвета реалиовать через JS с атрибутом data-color = "цвет" -->
+              <ul class="card__colors colors">
+                <li class="colors__item colors__item--brown colors__item--active">
+                  <span class="visually-hidden">Коричневый</span>
+                </li>
+                <li class="colors__item colors__item--gray">
+                  <span class="visually-hidden">Серый</span>
+                </li>
+                <li class="colors__item colors__item--blue">
+                  <span class="visually-hidden">Синий</span>
+                </li>
+                <li class="colors__item colors__item--black">
+                  <span class="visually-hidden">Черный</span>
+                </li>
+                <li class="colors__item colors__item--white ">
+                  <span class="visually-hidden">Белый</span>
+                </li>
+                <li class="colors__item colors__item__more-colors">
+                  <span>+4</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card__fieldset-pay">
+              <!-- card__form--old-price - расширяет блок -->
+              <form action="#" method="post" class="card__form">
+                <div class="card__price price">
+                  <div class="price__wrapper">
+                    <button class="price__add-to-card">
+                      <span class="visually-hidden">Добавить в корзину</span>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                      </svg>                            
+                    </button>
+                    <div class="price__total">165 000 ₽</div>
+                    <div class="price__quantity price__quantity--add-to-card">
+                      <button class="price__add-to-card">
+                        <span class="visually-hidden">Добавить в корзину</span>
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                        </svg>                            
+                      </button>
+                      <button class="price__button price__button--minus" type="button"><span>-</span></button>
+                      <label class="price__label-total">
+                        <input type="number" class="price__number" placeholder="1" value="1">
+                      </label>
+                      <button class="price__button price__button--plus" type="button"><span>+</span></button>
+                    </div>
+                  </div>
+                  <button class="price__submit" type="submit">Купить в 1 клик</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="category__item card">
+            <div class="card__fieldset-labels">
+              <div class="card__labes labels">
+                <span class="labels__sale labels__opacity">-10%</span>
+                <span class="labels__hit labels__opacity">Хит продаж</span>
+                <span class="labels__new">Новинка</span>
+                <svg class="labels__like labels__like--nolike" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>                        
+              </div>
+            </div>
+            <div class="card__fieldset-characteristics">
+              <a href="#" class="card__link">
+                <picture>
+                  <img src="./assets/img/okamura_legender.jpg" alt="Milani Nordic" class="card__photo" width="273" height="286">
+                </picture>
+                <b class="card__name">Okamura Legender</b>
+              </a>
+              <!-- card__status--to-order класс говорит что нет в наличии -->
+              <span class="card__status card__status--to-order">под заказ</span>
+              <ul class="card__tags tags">
+                <li class="tags__item"><span class="tags__name">кресло руководителя</span></li>
+                <li class="tags__item"><span class="tags__name">эргономичное</span></li>
+              </ul>
+              <ul class="card__colors colors">
+                <li class="colors__item colors__item--brown colors__item--active">
+                  <span class="visually-hidden">Коричневый</span>
+                </li>
+                <li class="colors__item colors__item--gray">
+                  <span class="visually-hidden">Серый</span>
+                </li>
+                <li class="colors__item colors__item--blue">
+                  <span class="visually-hidden">Синий</span>
+                </li>
+                <li class="colors__item colors__item--black">
+                  <span class="visually-hidden">Черный</span>
+                </li>
+                <li class="colors__item colors__item--white ">
+                  <span class="visually-hidden">Белый</span>
+                </li>
+                <li class="colors__item colors__item__more-colors">
+                  <span>+4</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card__fieldset-pay">
+              <!-- card__form--old-price - расширяет блок -->
+              <form action="#" method="post" class="card__form">
+                <div class="card__price price">
+                  <div class="price__wrapper">
+                    <button class="price__add-to-card">
+                      <span class="visually-hidden">Добавить в корзину</span>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                        <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                      </svg>                            
+                    </button>
+                    <div class="price__total">165 000 ₽</div>
+                    <div class="price__quantity price__quantity--add-to-card">
+                      <button class="price__add-to-card">
+                        <span class="visually-hidden">Добавить в корзину</span>
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.6282 11.6091H6.31555C5.74486 11.6091 5.28223 11.1372 5.28223 10.5549C5.28223 9.97272 5.74486 9.50074 6.31555 9.50074H12.3164C12.8197 9.50074 13.2514 9.13458 13.3433 8.62976L14.0462 4.76978" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6.00705 9.35647L3.96851 2.87734C3.72792 2.11265 3.03081 1.59399 2.24359 1.59399H1.29688" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <ellipse cx="7.09378" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <ellipse cx="11.4424" cy="13.6072" rx="0.724642" ry="0.739283" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"></ellipse>
+                          <path d="M9.78577 4.38706H11.2204V5.15222H9.78577V6.58689H9.02061V5.15222H7.58594V4.38706H9.02061V2.95239H9.78577V4.38706Z" fill="#3A3A3A"></path>
+                        </svg>                            
+                      </button>
+                      <button class="price__button price__button--minus" type="button"><span>-</span></button>
+                      <label class="price__label-total">
+                        <input type="number" class="price__number" placeholder="1" value="1">
+                      </label>
+                      <button class="price__button price__button--plus" type="button"><span>+</span></button>
+                    </div>
+                  </div>
+                  <button class="price__submit" type="submit">Купить в 1 клик</button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+        <div class="products__wrapper-paggination products__wrapper-paggination--similar">
+          <button class="products__pagination-button products-button-prev ">
+            <span class="visually-hidden">Предыдущий товар</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.2004 1.19995L6.40039 12L17.2004 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"></path>
+            </svg>               
+          </button>
+          <button class="products__pagination-button products-button-next ">
+            <span class="visually-hidden">Следующий товар</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.79961 1.19995L17.5996 12L6.79961 22.8" stroke="#666666" stroke-width="2" stroke-linecap="round"></path>
+            </svg>            
+          </button>
+        </div>
+      </div>
     </section>
     <footer class="page__footer footer">
       <div class="footer__container container">

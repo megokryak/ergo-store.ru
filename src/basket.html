@@ -379,68 +379,105 @@
     </section>
     <section class="page__basket basket">
       <div class="basket__container container">
-        <div class="basket__wrapper-title">
-          <h2 class="basket__title">Корзина</h2>
-          <span class="basket__col-products">5 товаров</span>
-        </div>
-        <div class="basket__copy-link">
-          <div class="basket__wrapper-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M14.7319 11.5612L16.6967 9.59644C18.4344 7.85865 18.4344 5.04113 16.6967 3.30334C14.9589 1.56555 12.1413 1.56555 10.4036 3.30334L8.43883 5.26807M11.5612 14.7319L9.59644 16.6967C7.85865 18.4344 5.04113 18.4344 3.30334 16.6967C1.56555 14.9589 1.56555 12.1413 3.30334 10.4036L5.26807 8.43883M13.4439 6.5561L6.55605 13.4439" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <div class="basker__wrapper">
+          <div class="basket__wrapper-title">
+            <h2 class="basket__title">Корзина</h2>
+            <span class="basket__col-products">5 товаров</span>
           </div>
-          <span class="basket__text-link">Скопировать ссылку на корзину</span>
-        </div>
-        <div class="basket__wrapper-action">
-          <div class=" basket__wrapper-select-all basket__wrapper-select-all--selected">
-            <span class="basket__marker"></span>
-            <span class="basket__select-all">Выбрать все</span>
+          <div class="basket__copy-link">
+            <div class="basket__wrapper-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M14.7319 11.5612L16.6967 9.59644C18.4344 7.85865 18.4344 5.04113 16.6967 3.30334C14.9589 1.56555 12.1413 1.56555 10.4036 3.30334L8.43883 5.26807M11.5612 14.7319L9.59644 16.6967C7.85865 18.4344 5.04113 18.4344 3.30334 16.6967C1.56555 14.9589 1.56555 12.1413 3.30334 10.4036L5.26807 8.43883M13.4439 6.5561L6.55605 13.4439" stroke="#A0A0A0" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="basket__text-link">Скопировать ссылку на корзину</span>
           </div>
-          <button class="basket__delete-all" type="button">
-            Удалить все
-          </button>
+          <div class="basket__wrapper-action">
+            <div class=" basket__wrapper-select-all basket__wrapper-select-all--selected">
+              <span class="basket__marker"></span>
+              <span class="basket__select-all">Выбрать все</span>
+            </div>
+            <button class="basket__delete-all" type="button">
+              Удалить все
+            </button>
+          </div>
         </div>
-        <div class="basket__wrapper-information">
-          <ul class="basket__list">
-            <li class="basket__item">
-              <div class="basket__wrapper-img">
-                <img src="/assets/img/basket1.jpg" alt="Кресло руководителя Milani Nordic" class="basket__img" width="77" height="81">
-                <span class="basket__marker-single basket__marker-single--selected"></span>
-              </div>
-              <div class="basket__wrapper-product-title">
-                <h3 class="basket__title-product">Кресло руководителя Milani Nordic</h3>
-                <span class="basket__complectation">цвет коричневый</span>
-              </div>
-              <div class="basket__wrapper-price">
-                <b class="basket__product-price">168 680 ₽</b>
-                <span class="basket__product-old-price">189 990 ₽ </span>
-              </div>
-              <div class="basket__wrapper-product-action">
-                <button class="basket__product-like">
-                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>                  
-                  <span class="visually-hidden">Добавить в избранное</span>
-                </button>
-                <button class="basket__product-delete" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M16.4295 2.9001L15.7195 16.9128C15.6762 17.7679 14.9703 18.439 14.1141 18.439H5.8852C5.02903 18.439 4.32311 17.7679 4.27979 16.9128L3.56978 2.9001M12.6788 2.9001L12.4788 2.08362C12.4039 1.77785 12.1078 1.56055 11.7659 1.56055H8.23342C7.89155 1.56055 7.59538 1.77785 7.5205 2.08362L7.32054 2.9001M2.23022 2.9001H17.7691M9.99965 5.44487V15.8943M7.23473 5.44487L7.50264 15.8943M12.7651 5.44487L12.4972 15.8943" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <span class="visually-hidden">Удалить</span>
-                </button>
-                <button class="basket__product-buy-click">Купить в 1 клик</button>
-                <div class="basket__quantity">
-                  <button class="basket__button basket__button--minus" type="button"><span>-</span></button>
-                  <label class="basket__label-total">
-                    <input type="number" class="basket__number" placeholder="1" value="1">
-                  </label>
-                  <button class="basket__button basket__button--plus" type="button"><span>+</span></button>
+        <div class="basket__wrapper-pay-information">
+          <div class="basket__wrapper-information">
+            <ul class="basket__list">
+              <li class="basket__item">
+                <div class="basket__wrapper-img">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./assets/img/basket1_1200.jpg">
+                    <img src="/assets/img/basket1.jpg" alt="Кресло руководителя Milani Nordic" class="basket__img" width="77" height="81">
+                  </picture>
+                  <span class="basket__marker-single basket__marker-single--selected"></span>
                 </div>
-              </div>
-            </li>
-          </ul>
+                <div class="basket__wrapper-product-title">
+                  <h3 class="basket__title-product">Кресло руководителя Milani Nordic</h3>
+                  <span class="basket__complectation">цвет коричневый</span>
+                </div>
+                <div class="basket__wrapper-price">
+                  <b class="basket__product-price">168 680 ₽</b>
+                  <span class="basket__product-old-price">189 990 ₽ </span>
+                </div>
+                <div class="basket__wrapper-product-action">
+                  <button class="basket__product-like">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.7859 2.09301C0.127117 3.69102 0.0473027 6.27883 1.69727 8.02687L8.00004 14L14.3028 8.02687C15.9526 6.27883 15.873 3.69102 14.2142 2.09301C12.6584 0.594443 9.55329 0.4343 8.00004 2.90082C6.44679 0.4343 3.34166 0.594443 1.7859 2.09301Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>                  
+                    <span class="visually-hidden">Добавить в избранное</span>
+                  </button>
+                  <button class="basket__product-delete" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M16.4295 2.9001L15.7195 16.9128C15.6762 17.7679 14.9703 18.439 14.1141 18.439H5.8852C5.02903 18.439 4.32311 17.7679 4.27979 16.9128L3.56978 2.9001M12.6788 2.9001L12.4788 2.08362C12.4039 1.77785 12.1078 1.56055 11.7659 1.56055H8.23342C7.89155 1.56055 7.59538 1.77785 7.5205 2.08362L7.32054 2.9001M2.23022 2.9001H17.7691M9.99965 5.44487V15.8943M7.23473 5.44487L7.50264 15.8943M12.7651 5.44487L12.4972 15.8943" stroke="#3A3A3A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="visually-hidden">Удалить</span>
+                  </button>
+                  <button class="basket__product-buy-click">Купить в 1 клик</button>
+                  <div class="basket__quantity">
+                    <button class="basket__button basket__button--minus" type="button"><span>-</span></button>
+                    <label class="basket__label-total">
+                      <input type="number" class="basket__number" placeholder="1" value="1">
+                    </label>
+                    <button class="basket__button basket__button--plus" type="button"><span>+</span></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="basket__info">
+            <h2 class="basket-info-title">Ваша корзина</h2>
+            <div class="basket__total-products">
+              <span>4 товара на сумму</span>
+              <span class="basket__price">341 760 ₽</span>
+            </div>
+            <div class="basket__total-sale">
+              <span>Скидка</span>
+              <span class="baslet__sale">- 46 180 ₽</span>
+            </div>
+            <div class="basket__total-price">
+              <b>Итого</b>
+              <b>295 580 ₽</b>
+            </div>
+            <span class="basket__mini-information">Без учета стоимости доставки</span>
+            <div class="basket__wrapper-btn">
+              <button class="basket__btn btn-link">
+                Перейти к оформлению
+                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 1L13 6L8 11" stroke="white" stroke-linecap="round"></path>
+                  <path d="M12 6L1 6" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <span class="basket__description-pay">Доступные способы оплаты и доставки можно выбрать при оформлении заказа</span>
+            </div>
+            <div class="basket__promo">
+              <input type="text" class="basket__promo-input" placeholder="Введите промокод">
+              <button class="basket__btn-done">Применить</button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
     <section class="page__products products products--similar">
       <div class="products__container container">

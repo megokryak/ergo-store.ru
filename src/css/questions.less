@@ -4,11 +4,21 @@
   background-color: @colorLightGray;
 }
 
+.questions--white {
+  background-color: @colorWhite;
+}
+
 .questions__container {
   @media (min-width: @t-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.success__questions .questions__container {
+  @media (min-width: @t-width) {
+    display: block;
   }
 }
 
@@ -27,6 +37,17 @@
   }
 }
 
+.success__questions .questions__wrapper-social {
+  @media (min-width: @t-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    row-gap: 10px;
+  }
+}
+
 .questions__wrapper-social p.questions__text  {
   @media (min-width: @t-width) {
     order: 3;
@@ -41,6 +62,14 @@
   }
 }
 
+.success__questions .questions__wrapper-button {
+  @media (min-width: @t-width) {
+    order: 4;
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+
 .questions__title {
   text-align: center;
 }
@@ -49,6 +78,10 @@
   text-align: center;
   line-height: 160%;
   margin-top: 8px;
+}
+
+.success__questions .questions__text {
+  text-align: left;
 }
 
 .questions__text--margin-top {
@@ -64,6 +97,12 @@
 
   @media (min-width: @t-width) {
     margin-top: 0;
+  }
+}
+
+.success__questions .questions__btn-link {
+  @media (min-width: @t-width) {
+    width: 100%;
   }
 }
 
@@ -88,6 +127,12 @@
   }
 }
 
+.success__questions .questions__tel {
+  @media (min-width: @t-width) {
+    order: 1;
+  }
+}
+
 .questions__social {
   display: flex;
   justify-content: center;
@@ -99,10 +144,35 @@
   }
 }
 
+.success__questions .questions__social {
+  @media (min-width: @t-width) {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+}
+
 .questions__link:hover path,
 .questions__link:hover rect,
 .questions__link:focus path,
 .questions__link:focus rect {
   stroke: @colorOrange;
   transition: 0.3s;
+}
+
+.questions__time {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: @colorGray;
+  line-height: 140%;
+  letter-spacing: 0.14px;
+  margin-top: 4px;
+}
+
+.success__questions .questions__time {
+  @media (min-width: @t-width) {
+    order: 2;
+  }
 }

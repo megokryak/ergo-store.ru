@@ -27,9 +27,11 @@
   }
 
   @media (min-width: @t-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
     margin-top: 27px;
   }
 

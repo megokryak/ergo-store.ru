@@ -9,7 +9,7 @@
 
 .price__wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   cursor: pointer;
   transition: 0.3s;
 
@@ -36,7 +36,11 @@
 }
 
 .price__total {
-  display: inline-block;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
   padding: 14px 33px;
   font-size: 16px;
   font-weight: 600;
@@ -46,32 +50,20 @@
   border-radius: 4px 0 0 4px;
 
   @media (min-width: @t-width) {
-    padding: 8px 33px;
-  }
-}
-
-.price__total--old-price {
-  margin-left: auto;
-  position: relative;
-  padding: 14px 24px;
-
-  @media (min-width: @t-width) {
     padding: 8px 24px;
   }
 }
 
-.price__total--old-price::before {
-  content: "189 990 ₽";
+.price__old-price {
   font-size: 12px;
   line-height: 20px;
   font-weight: 500;
+  position: relative;
+  padding: 14px 5px;
   color: @colorDarkGray;
-  position: absolute;
-  top: calc(50% - 10px);
-  left: -70px;
 }
 
-.price__total--old-price::after {
+.price__old-price::after {
   content: "";
   width: 63px;
   height: 8px;
@@ -79,10 +71,42 @@
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  left: -70px;
+  left: 0px;
   top: calc(50% - 4px);
   z-index: 1;
 }
+
+// .price__total--old-price {
+//   padding: 14px 24px;
+
+//   @media (min-width: @t-width) {
+//     padding: 8px 24px;
+//   }
+// }
+
+// .price__total--old-price::before {
+//   content: "189 990 ₽";
+//   font-size: 12px;
+//   line-height: 20px;
+//   font-weight: 500;
+//   color: @colorDarkGray;
+//   position: absolute;
+//   top: calc(50% - 10px);
+//   left: -70px;
+// }
+
+// .price__total--old-price::after {
+//   content: "";
+//   width: 63px;
+//   height: 8px;
+//   background-image: url("/assets/img/old_price.png");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   left: -70px;
+//   top: calc(50% - 4px);
+//   z-index: 1;
+// }
 
 .price__quantity {
   display: flex;

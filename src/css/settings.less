@@ -17,6 +17,8 @@
 .settings__change-material,
 .settings__change-peculiarities {
   display: none;
+  position: relative;
+  box-sizing: border-box;
 
   @media (min-width: @t-width) {
     display: block;
@@ -175,3 +177,16 @@
   letter-spacing: 0.16px;
 }
 
+.settings_features-list {
+  background-color: @colorWhite;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: 80px;
+  border: 1px solid @colorDopGray;
+  border-radius: 0 0 6px 6px;
+  border-top: none;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 1;
+}
